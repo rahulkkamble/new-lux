@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Luxora Properties - Luxury Real Estate in Dubai</title>
+  <meta name="description" content="Discover exclusive luxury properties in Dubai's most prestigious locations. Premium apartments, villas, and penthouses starting from AED 2.5 Million." />
+  <meta name="author" content="Luxora Properties" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Luxora Properties - Luxury Real Estate in Dubai" />
+  <meta property="og:description" content="Discover exclusive luxury properties in Dubai's most prestigious locations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Luxora Properties - Luxury Real Estate in Dubai" />
+  <meta name="twitter:description" content="Discover exclusive luxury properties in Dubai's most prestigious locations." />
+  <meta name="twitter:image" content="assets/img/og-image.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body style="font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#" style="font-family: 'Playfair Display', serif;">
+        Luxora <span class="text-warning">Properties</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#luxNav" aria-controls="luxNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="luxNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+          <li class="nav-item"><a class="nav-link" href="#welcome">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#invest">Invest</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why-luxora">Why Luxora</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="position-relative text-white">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="
+      background: linear-gradient(135deg, rgba(9,14,26,0.85), rgba(18,27,48,0.75)),
+                  url('assets/img/luxury-dubai-hero.jpg') center/cover no-repeat;">
+    </div>
+    <div class="container position-relative" style="z-index: 1;">
+      <div class="row align-items-center" style="min-height: 80vh;">
+        <div class="col-lg-7 py-5">
+          <h1 class="display-4 fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
+            Luxury Homes <span class="d-block text-warning">Starting From</span>
+            <span class="d-block">AED 2.5 Mn*</span>
+          </h1>
+          <p class="lead text-white-75 mb-4">
+            Discover Dubai's most exclusive properties in prestigious locations. Where luxury meets lifestyle.
+          </p>
+          <div class="d-flex flex-column flex-sm-row gap-3">
+            <a href="#properties" class="btn btn-warning text-dark fw-semibold px-4 py-2">Explore Properties</a>
+            <a href="#contact" class="btn btn-outline-light fw-semibold px-4 py-2">Schedule Viewing</a>
+          </div>
+          <div class="d-flex flex-wrap gap-4 mt-4 text-white-75">
+            <div class="d-flex align-items-center gap-2">
+              <span class="text-warning">☎</span><span>+971 4 XXX XXXX</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="text-warning">✉</span><span>info@luxora.ae</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 py-5">
+          <div class="bg-white rounded-4 shadow p-4 p-lg-5 ms-lg-auto" style="max-width: 480px;">
+            <h3 class="h3 fw-bold text-dark mb-2" style="font-family: 'Playfair Display', serif;">Book A Site Visit</h3>
+            <p class="text-muted mb-4">Get exclusive access to luxury properties</p>
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" placeholder="Full Name" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control form-control-lg" placeholder="Email Address" />
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control form-control-lg" placeholder="Phone Number" />
+              </div>
+              <div class="mb-3">
+                <select class="form-select form-select-lg">
+                  <option selected>Select Property Type</option>
+                  <option>Luxury Apartment</option>
+                  <option>Premium Villa</option>
+                  <option>Exclusive Penthouse</option>
+                  <option>Townhouse</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <select class="form-select form-select-lg">
+                  <option selected>Budget Range</option>
+                  <option>AED 2.5M - 5M</option>
+                  <option>AED 5M - 10M</option>
+                  <option>AED 10M - 20M</option>
+                  <option>AED 20M+</option>
+                </select>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="consent" />
+                <label class="form-check-label text-muted" for="consent">
+                  I agree to receive communications from Luxora Properties
+                </label>
+              </div>
+              <button type="submit" class="btn btn-dark btn-lg w-100">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column align-items-center gap-2 pb-4">
+        <span class="small text-white-50">Scroll to explore</span>
+        <div class="border border-2 border-white-50 rounded-pill d-flex justify-content-center align-items-start" style="width: 24px; height: 40px;">
+          <div class="bg-warning rounded-pill mt-2" style="width: 4px; height: 12px; animation: scrollDot 1.8s infinite;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Properties -->
+  <section id="properties" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="text-warning fw-semibold mb-2">FEATURED COLLECTION</p>
+        <h2 class="h1 fw-bold mb-3" style="font-family: 'Playfair Display', serif;">TRENDING LUXORA PROPERTIES</h2>
+        <div class="mx-auto mb-3" style="width: 96px; height: 4px; background: linear-gradient(90deg, #e7c04b, #f7e3a2); border-radius: 999px;"></div>
+        <p class="text-muted lead mx-auto" style="max-width: 720px;">
+          Discover our handpicked selection of the most sought-after luxury properties in Dubai's most prestigious neighborhoods.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/luxury-villa.jpg" class="card-img-top" alt="Oceanview Villa" style="height: 260px; object-fit: cover;" />
+              <span class="position-absolute top-0 start-0 m-3 badge text-bg-warning text-dark fw-semibold">LUXURY VILLA</span>
+              <span class="position-absolute top-0 end-0 m-3 badge bg-white text-dark fw-bold">AED 15.5M</span>
+            </div>
+            <div class="card-body">
+              <h3 class="h5 fw-bold mb-1" style="font-family: 'Playfair Display', serif;">Oceanview Villa</h3>
+              <div class="text-muted mb-3">Palm Jumeirah</div>
+              <div class="row g-2 border-top pt-3">
+                <div class="col-4 small text-muted">6 Beds</div>
+                <div class="col-4 small text-muted">7 Baths</div>
+                <div class="col-4 small text-muted">4 Parking</div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-2">
+                <span class="small fw-semibold">8,500 sq ft</span>
+                <a class="link-warning fw-semibold small" href="#">View Details →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/luxury-penthouse.jpg" class="card-img-top" alt="Skyline Penthouse" style="height: 260px; object-fit: cover;" />
+              <span class="position-absolute top-0 start-0 m-3 badge text-bg-warning text-dark fw-semibold">EXCLUSIVE PENTHOUSE</span>
+              <span class="position-absolute top-0 end-0 m-3 badge bg-white text-dark fw-bold">AED 25.8M</span>
+            </div>
+            <div class="card-body">
+              <h3 class="h5 fw-bold mb-1" style="font-family: 'Playfair Display', serif;">Skyline Penthouse</h3>
+              <div class="text-muted mb-3">Downtown Dubai</div>
+              <div class="row g-2 border-top pt-3">
+                <div class="col-4 small text-muted">4 Beds</div>
+                <div class="col-4 small text-muted">5 Baths</div>
+                <div class="col-4 small text-muted">3 Parking</div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-2">
+                <span class="small fw-semibold">6,200 sq ft</span>
+                <a class="link-warning fw-semibold small" href="#">View Details →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/luxury-apartment.jpg" class="card-img-top" alt="Marina Residence" style="height: 260px; object-fit: cover;" />
+              <span class="position-absolute top-0 start-0 m-3 badge text-bg-warning text-dark fw-semibold">PREMIUM APARTMENT</span>
+              <span class="position-absolute top-0 end-0 m-3 badge bg-white text-dark fw-bold">AED 8.2M</span>
+            </div>
+            <div class="card-body">
+              <h3 class="h5 fw-bold mb-1" style="font-family: 'Playfair Display', serif;">Marina Residence</h3>
+              <div class="text-muted mb-3">Dubai Marina</div>
+              <div class="row g-2 border-top pt-3">
+                <div class="col-4 small text-muted">3 Beds</div>
+                <div class="col-4 small text-muted">4 Baths</div>
+                <div class="col-4 small text-muted">2 Parking</div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-2">
+                <span class="small fw-semibold">3,800 sq ft</span>
+                <a class="link-warning fw-semibold small" href="#">View Details →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/luxury-villa.jpg" class="card-img-top" alt="Creek Harbour Tower" style="height: 260px; object-fit: cover;" />
+              <span class="position-absolute top-0 start-0 m-3 badge text-bg-warning text-dark fw-semibold">WATERFRONT</span>
+              <span class="position-absolute top-0 end-0 m-3 badge bg-white text-dark fw-bold">AED 12.3M</span>
+            </div>
+            <div class="card-body">
+              <h3 class="h5 fw-bold mb-1" style="font-family: 'Playfair Display', serif;">Creek Harbour Tower</h3>
+              <div class="text-muted mb-3">Dubai Creek</div>
+              <div class="row g-2 border-top pt-3">
+                <div class="col-4 small text-muted">4 Beds</div>
+                <div class="col-4 small text-muted">5 Baths</div>
+                <div class="col-4 small text-muted">2 Parking</div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-2">
+                <span class="small fw-semibold">4,500 sq ft</span>
+                <a class="link-warning fw-semibold small" href="#">View Details →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/luxury-penthouse.jpg" class="card-img-top" alt="Emirates Hills Villa" style="height: 260px; object-fit: cover;" />
+              <span class="position-absolute top-0 start-0 m-3 badge text-bg-warning text-dark fw-semibold">ULTRA LUXURY</span>
+              <span class="position-absolute top-0 end-0 m-3 badge bg-white text-dark fw-bold">AED 22.7M</span>
+            </div>
+            <div class="card-body">
+              <h3 class="h5 fw-bold mb-1" style="font-family: 'Playfair Display', serif;">Emirates Hills Villa</h3>
+              <div class="text-muted mb-3">Emirates Hills</div>
+              <div class="row g-2 border-top pt-3">
+                <div class="col-4 small text-muted">7 Beds</div>
+                <div class="col-4 small text-muted">8 Baths</div>
+                <div class="col-4 small text-muted">6 Parking</div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-2">
+                <span class="small fw-semibold">12,000 sq ft</span>
+                <a class="link-warning fw-semibold small" href="#">View Details →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/luxury-apartment.jpg" class="card-img-top" alt="Business Bay Heights" style="height: 260px; object-fit: cover;" />
+              <span class="position-absolute top-0 start-0 m-3 badge text-bg-warning text-dark fw-semibold">MODERN LIVING</span>
+              <span class="position-absolute top-0 end-0 m-3 badge bg-white text-dark fw-bold">AED 6.8M</span>
+            </div>
+            <div class="card-body">
+              <h3 class="h5 fw-bold mb-1" style="font-family: 'Playfair Display', serif;">Business Bay Heights</h3>
+              <div class="text-muted mb-3">Business Bay</div>
+              <div class="row g-2 border-top pt-3">
+                <div class="col-4 small text-muted">2 Beds</div>
+                <div class="col-4 small text-muted">3 Baths</div>
+                <div class="col-4 small text-muted">1 Parking</div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-2">
+                <span class="small fw-semibold">2,400 sq ft</span>
+                <a class="link-warning fw-semibold small" href="#">View Details →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a class="btn btn-warning text-dark fw-semibold px-4 py-2" href="#">View All Properties</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Welcome -->
+  <section id="welcome" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <p class="text-warning fw-semibold mb-2">A LEGACY BUILT ON TRUST</p>
+          <h2 class="display-6 fw-bold mb-3" style="font-family: 'Playfair Display', serif;">WELCOME TO LUXORA PROPERTIES, DUBAI</h2>
+          <div class="mx-0 mb-4" style="width: 96px; height: 4px; background: linear-gradient(90deg, #e7c04b, #f7e3a2); border-radius: 999px;"></div>
+          <div class="text-muted lead">
+            <p>Our vision is to create extraordinary urban spaces that enhance the quality of life and become treasured landmarks in the magnificent tapestry of Dubai, an ambitious city fueled by energy and opportunity.</p>
+            <p>With over two decades of excellence in luxury real estate, we have crafted some of Dubai's most prestigious residential and commercial developments. Our commitment to innovation, quality, and customer satisfaction has made us a trusted name in the region's real estate landscape.</p>
+            <p>From iconic waterfront towers to exclusive villa communities, every Luxora property reflects our dedication to architectural brilliance and lifestyle enhancement.</p>
+          </div>
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-3">
+            <a href="#" class="btn btn-warning text-dark fw-semibold px-4 py-2">Our Portfolio</a>
+            <a href="#" class="btn btn-outline-dark fw-semibold px-4 py-2">Company Story</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="position-relative rounded-4 overflow-hidden shadow">
+            <img src="assets/img/luxury-apartment.jpg" alt="Luxury apartment interior" class="w-100" style="height: 520px; object-fit: cover;" />
+            <div class="position-absolute bottom-0 start-0 end-0 p-3">
+              <div class="bg-white rounded-4 shadow p-4">
+                <div class="row text-center g-3">
+                  <div class="col-4">
+                    <div class="h4 fw-bold m-0 text-dark">50+</div>
+                    <div class="small text-muted">Premium Projects</div>
+                  </div>
+                  <div class="col-4">
+                    <div class="h4 fw-bold m-0 text-dark">25k+</div>
+                    <div class="small text-muted">Happy Residents</div>
+                  </div>
+                  <div class="col-4">
+                    <div class="h4 fw-bold m-0 text-dark">20+</div>
+                    <div class="small text-muted">Years Experience</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Invest -->
+  <section id="invest" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="text-warning fw-semibold mb-2">INVESTMENT ADVANTAGES</p>
+        <h2 class="display-6 fw-bold mb-3" style="font-family: 'Playfair Display', serif;">WHY INVEST IN DUBAI?</h2>
+        <div class="mx-auto mb-3" style="width: 96px; height: 4px; background: linear-gradient(90deg, #e7c04b, #f7e3a2); border-radius: 999px;"></div>
+        <p class="text-muted lead mx-auto" style="max-width: 800px;">
+          Dubai offers unparalleled opportunities for luxury real estate investment, combining world-class infrastructure with exceptional returns and lifestyle benefits.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 h-100 bg-white rounded-4 shadow-sm">
+            <div class="display-6 mb-3">📈</div>
+            <h3 class="h5 fw-bold">High Return Rates</h3>
+            <p class="text-muted small">Exceptional investment returns with Dubai's booming real estate market growth and appreciation.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 h-100 bg-white rounded-4 shadow-sm">
+            <div class="display-6 mb-3">🛡️</div>
+            <h3 class="h5 fw-bold">Prime Real Estate</h3>
+            <p class="text-muted small">Secure investments in Dubai's most sought-after locations with guaranteed quality and luxury.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 h-100 bg-white rounded-4 shadow-sm">
+            <div class="display-6 mb-3">🌍</div>
+            <h3 class="h5 fw-bold">No Personal Income Tax</h3>
+            <p class="text-muted small">Enjoy tax-free living and investment gains in one of the world's most business-friendly economies.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 h-100 bg-white rounded-4 shadow-sm">
+            <div class="display-6 mb-3">🏅</div>
+            <h3 class="h5 fw-bold">High Accessibility</h3>
+            <p class="text-muted small">World-class connectivity with top airlines, making Dubai a global hub for business and leisure.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <div class="p-5 p-lg-5 rounded-4 text-white" style="background: linear-gradient(135deg, #0b1222, #161f3a); box-shadow: 0 25px 50px -12px rgba(9,14,26,0.25);">
+          <h3 class="h2 fw-bold mb-3" style="font-family: 'Playfair Display', serif;">Ready to Make Dubai Your Home?</h3>
+          <p class="text-white-75 lead mx-auto" style="max-width: 760px;">
+            Join thousands of satisfied investors who have made Dubai their luxury lifestyle destination. Start your journey with Luxora Properties today.
+          </p>
+          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mt-3">
+            <a href="#" class="btn btn-warning text-dark fw-semibold px-4 py-2">Investment Guide</a>
+            <a href="#" class="btn btn-outline-light fw-semibold px-4 py-2">Speak to Expert</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Luxora -->
+  <section id="why-luxora" class="py-5 text-white position-relative" style="background: #0b1222; overflow: hidden;">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.1; background: radial-gradient(600px 300px at 10% 10%, #f2d36a, transparent), radial-gradient(600px 300px at 90% 20%, #f2d36a, transparent);"></div>
+    <div class="container position-relative">
+      <div class="text-center mb-5">
+        <p class="text-warning fw-semibold mb-2">TRUSTED EXCELLENCE</p>
+        <h2 class="display-6 fw-bold mb-3" style="font-family: 'Playfair Display', serif;">WHY LUXORA?</h2>
+        <div class="mx-auto mb-3" style="width: 96px; height: 4px; background: linear-gradient(90deg, #e7c04b, #f7e3a2); border-radius: 999px;"></div>
+        <p class="text-white-75 lead mx-auto" style="max-width: 800px;">
+          For over two decades, Luxora Properties has been synonymous with luxury, innovation, and exceptional customer service in Dubai's real estate market.
+        </p>
+      </div>
+
+      <div class="row g-4 mb-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-white bg-opacity-10 rounded-4 h-100">
+            <div class="display-6 mb-2 text-warning">🏗️</div>
+            <div class="h2 fw-bold text-warning mb-1" style="font-family: 'Playfair Display', serif;">75+</div>
+            <div class="fw-semibold">PROJECTS</div>
+            <div class="small text-white-75 mt-2">Delivered across Dubai with exceptional quality standards</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-white bg-opacity-10 rounded-4 h-100">
+            <div class="display-6 mb-2 text-warning">👥</div>
+            <div class="h2 fw-bold text-warning mb-1" style="font-family: 'Playfair Display', serif;">50,000+</div>
+            <div class="fw-semibold">RESIDENTS</div>
+            <div class="small text-white-75 mt-2">Trust Luxora for their luxury lifestyle needs</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-white bg-opacity-10 rounded-4 h-100">
+            <div class="display-6 mb-2 text-warning">🏆</div>
+            <div class="h2 fw-bold text-warning mb-1" style="font-family: 'Playfair Display', serif;">25+</div>
+            <div class="fw-semibold">AWARDS</div>
+            <div class="small text-white-75 mt-2">Recognition for excellence in real estate development</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-white bg-opacity-10 rounded-4 h-100">
+            <div class="display-6 mb-2 text-warning">📍</div>
+            <div class="h2 fw-bold text-warning mb-1" style="font-family: 'Playfair Display', serif;">12+</div>
+            <div class="fw-semibold">LOCATIONS</div>
+            <div class="small text-white-75 mt-2">Premium developments across Dubai's best areas</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-4">
+          <div class="text-center p-4 bg-white bg-opacity-10 rounded-4 h-100">
+            <h4 class="fw-bold text-warning mb-2" style="font-family: 'Playfair Display', serif;">Quality Craftsmanship</h4>
+            <p class="small text-white-75">Every detail meticulously planned and executed to the highest standards</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center p-4 bg-white bg-opacity-10 rounded-4 h-100">
+            <h4 class="fw-bold text-warning mb-2" style="font-family: 'Playfair Display', serif;">Customer-Centric Approach</h4>
+            <p class="small text-white-75">Dedicated support from initial inquiry to post-handover services</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center p-4 bg-white bg-opacity-10 rounded-4 h-100">
+            <h4 class="fw-bold text-warning mb-2" style="font-family: 'Playfair Display', serif;">Innovation & Design</h4>
+            <p class="small text-white-75">Pioneering architectural concepts that set new benchmarks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter / Contact -->
+  <section id="contact" class="py-5 border-top">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h3 class="h2 fw-bold mb-2" style="font-family: 'Playfair Display', serif;">Stay Updated</h3>
+          <p class="text-muted mb-0">Get the latest luxury property updates and exclusive investment opportunities</p>
+        </div>
+        <div class="col-lg-6">
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control form-control-lg" placeholder="Enter your email" />
+            <button class="btn btn-warning text-dark fw-semibold px-4">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h4 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif;"><span class="text-warning">Luxora</span> Properties</h4>
+          <p class="text-white-75 mb-4">
+            Creating extraordinary luxury living experiences in Dubai's most prestigious locations.
+            Your trusted partner in premium real estate investments.
+          </p>
+          <ul class="list-unstyled small text-white-75">
+            <li class="mb-2">☎ +971 4 XXX XXXX — 24/7 Customer Support</li>
+            <li class="mb-2">✉ info@luxora.ae — General Inquiries</li>
+            <li>📍 Business Bay, Dubai — United Arab Emirates</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6 class="fw-bold text-warning">Properties</h6>
+          <ul class="list-unstyled small mt-3">
+            <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Luxury Apartments</a></li>
+            <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Premium Villas</a></li>
+            <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Exclusive Penthouses</a></li>
+            <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Waterfront Properties</a></li>
+            <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Commercial Spaces</a></li>
+            <li><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Investment Opportunities</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6 class="fw-bold text-warning">Services</h6>
+          <ul class="list-unstyled small mt-3">
+            <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Property Management</a></li>
+            <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Investment Consultation</a></li>
+            <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Legal Services</a></li>
+            <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Mortgage Assistance</a></li>
+            <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">After-Sales Support</a></li>
+            <li><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Market Analysis</a></li>
+          </ul>
+
+          <div class="mt-4">
+            <h6 class="fw-semibold text-warning">Follow Us</h6>
+            <div class="d-flex gap-2 mt-2">
+              <a class="btn btn-outline-light btn-sm rounded-circle" href="#" aria-label="Facebook">F</a>
+              <a class="btn btn-outline-light btn-sm rounded-circle" href="#" aria-label="Instagram">I</a>
+              <a class="btn btn-outline-light btn-sm rounded-circle" href="#" aria-label="Twitter">X</a>
+              <a class="btn btn-outline-light btn-sm rounded-circle" href="#" aria-label="LinkedIn">in</a>
+              <a class="btn btn-outline-light btn-sm rounded-circle" href="#" aria-label="YouTube">▶</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary-subtle my-4" />
+      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3 pb-4 small text-white-75">
+        <div>© 2025 Luxora Properties. All rights reserved.</div>
+        <div class="d-flex gap-3">
+          <a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Privacy Policy</a>
+          <a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Terms of Service</a>
+          <a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Animations -->
+  <style>
+    @keyframes scrollDot {
+      0% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(8px); opacity: 0.7; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
