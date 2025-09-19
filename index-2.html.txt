@@ -130,80 +130,110 @@
 <body class="font-sans text-slate-900 bg-white">
     <!-- navbar -->
     <!-- Navbar -->
-    <!-- Navbar -->
-    <nav class="fixed top-0 inset-x-0 z-50 bg-navy-900/80 backdrop-blur border-b border-white/10">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Brand -->
-                <a href="#hero" class="flex items-center gap-2">
-                    <span class="font-serif text-xl text-white font-bold">
-                        <span class="text-gold-500">Luxora</span> Properties
-                    </span>
-                </a>
-
-                <!-- Desktop Nav -->
-                <div class="hidden lg:flex items-center gap-6">
-                    <a href="#hero" class="text-sm text-white/90 hover:text-gold-500 transition">Home</a>
-                    <a href="#welcome" class="text-sm text-white/90 hover:text-gold-500 transition">About</a>
-                    <a href="#properties" class="text-sm text-white/90 hover:text-gold-500 transition">Properties</a>
-                    <a href="#invest" class="text-sm text-white/90 hover:text-gold-500 transition">Invest</a>
-                    <a href="#why-luxora" class="text-sm text-white/90 hover:text-gold-500 transition">Why Luxora</a>
-                    <a href="#contact" class="text-sm text-white/90 hover:text-gold-500 transition">Contact</a>
-                    <a href="#contact"
-                        class="ml-2 text-white/90 hover:text-gold-500 transition inline-flex items-center px-4 py-2 rounded-lg border border-white/30 text-sm hover:bg-white/10 transition">
-                        Book Now
+    <nav class="fixed top-0 inset-x-0 z-50">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div
+                class="mt-4 rounded-xl border border-white/10 bg-navy-900/60 backdrop-blur supports-[backdrop-filter]:bg-navy-900/60 text-white shadow-soft">
+                <div class="flex items-center justify-between px-4 py-3">
+                    <!-- Brand -->
+                    <a href="#hero" class="flex items-center gap-2">
+                        <span class="font-serif text-xl font-bold">
+                            <span class="text-gold-500">Luxora</span> Properties
+                        </span>
                     </a>
+
+                    <!-- Mobile toggle -->
+                    <button type="button"
+                        class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-white/20 hover:bg-white/10 transition"
+                        aria-controls="luxNav" aria-expanded="false" id="luxNavBtn">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+
+                    <!-- Desktop nav -->
+                    <ul class="hidden lg:flex items-center gap-6">
+                        <li><a href="#hero" class="text-sm text-white/90 hover:text-gold-500 transition">Home</a></li>
+                        <li><a href="#welcome" class="text-sm text-white/90 hover:text-gold-500 transition">About</a>
+                        </li>
+                        <li><a href="#properties"
+                                class="text-sm text-white/90 hover:text-gold-500 transition">Properties</a></li>
+                        <li><a href="#invest" class="text-sm text-white/90 hover:text-gold-500 transition">Invest</a>
+                        </li>
+                        <li><a href="#why-luxora" class="text-sm text-white/90 hover:text-gold-500 transition">Why
+                                Luxora</a></li>
+                        <li><a href="#contact" class="text-sm text-white/90 hover:text-gold-500 transition">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="ml-2 inline-flex items-center px-4 py-2 rounded-lg border border-white/30 text-sm hover:bg-white/10 transition">
+                                Book Now
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Mobile toggle -->
-                <button id="navToggle"
-                    class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-white/20 hover:bg-white/10 transition">
-                    <i class="bi bi-list text-2xl text-white"></i>
-                </button>
+                <!-- Mobile menu -->
+                <div id="luxNav" class="hidden lg:hidden border-t border-white/10">
+                    <ul class="px-4 py-3 space-y-2">
+                        <li><a href="#hero"
+                                class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Home</a>
+                        </li>
+                        <li><a href="#welcome"
+                                class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">About</a>
+                        </li>
+                        <li><a href="#properties"
+                                class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Properties</a>
+                        </li>
+                        <li><a href="#invest"
+                                class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Invest</a>
+                        </li>
+                        <li><a href="#why-luxora"
+                                class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Why
+                                Luxora</a></li>
+                        <li><a href="#contact"
+                                class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Contact</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="mt-1 block rounded-md px-3 py-2 text-center text-sm border border-white/30 hover:bg-white/10 transition">Book
+                                Now</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10 bg-navy-900/95">
-            <ul class="px-4 py-3 space-y-2">
-                <li><a href="#hero"
-                        class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Home</a>
-                </li>
-                <li><a href="#welcome"
-                        class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">About</a>
-                </li>
-                <li><a href="#properties"
-                        class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Properties</a>
-                </li>
-                <li><a href="#invest"
-                        class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Invest</a>
-                </li>
-                <li><a href="#why-luxora"
-                        class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Why
-                        Luxora</a></li>
-                <li><a href="#contact"
-                        class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Contact</a>
-                </li>
-                <li><a href="#contact"
-                        class="mt-1 block rounded-md px-3 py-2 text-center text-sm border border-white/30 hover:bg-white/10 transition">Book
-                        Now</a></li>
-            </ul>
         </div>
     </nav>
 
-    <!-- Spacer so content isn't hidden behind fixed nav -->
-    <!-- <div class="h-16"></div> -->
+    <!-- Optional: add top padding so content isn’t hidden under fixed navbar -->
+    <div class="h-24"></div>
 
     <script>
-        const navToggle = document.getElementById('navToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-        navToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+            // Mobile menu toggle
+            (function () {
+                const btn = document.getElementById('luxNavBtn');
+                const menu = document.getElementById('luxNav');
+                if (btn && menu) {
+                    btn.addEventListener('click', () => {
+                        const isOpen = menu.classList.contains('hidden') === false;
+                        menu.classList.toggle('hidden', isOpen);
+                        btn.setAttribute('aria-expanded', String(!isOpen));
+                    });
+                }
+
+                // Subtle shadow on scroll
+                const shell = document.querySelector('nav .rounded-xl');
+                const onScroll = () => {
+                    if (!shell) return;
+                    if (window.scrollY > 10) {
+                        shell.classList.add('shadow-lux');
+                    } else {
+                        shell.classList.remove('shadow-lux');
+                    }
+                };
+                window.addEventListener('scroll', onScroll, { passive: true });
+                onScroll();
+            })();
     </script>
 
     <!-- Header / Hero -->
-    <header id="hero" class="pt-16 relative overflow-hidden text-white">
+    <header id="hero" class="relative overflow-hidden text-white">
         <div class="hero-overlay"></div>
 
         <div class="relative z-10">
@@ -553,8 +583,7 @@
                     data-aos="fade-up">
                     <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-cash-coin"></i></div>
                     <h3 class="font-serif text-xl font-bold text-navy-900">Global City Appeal</h3>
-                    <p class="text-slate-600 mt-2">Mumbai is a cultural, commercial, and entertainment hub attracting
-                        global investors.</p>
+                    <p class="text-slate-600 mt-2">Mumbai is a cultural, commercial, and entertainment hub attracting global investors.</p>
                 </div>
             </div>
         </div>
@@ -571,8 +600,7 @@
                 <p class="uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">Why Hubtown?</p>
                 <h2 class="font-serif text-4xl font-bold">Trusted Developers. Prime Locations. Exceptional Quality.</h2>
                 <div class="lux-divider mx-auto my-4"></div>
-                <p class="text-white/80 hidden">For over a decade, Luxora has delivered premium developments that
-                    redefine
+                <p class="text-white/80 hidden">For over a decade, Luxora has delivered premium developments that redefine
                     luxury living.</p>
             </div>
 
