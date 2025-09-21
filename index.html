@@ -128,8 +128,6 @@
 </head>
 
 <body class="font-sans text-slate-900 bg-white">
-    <!-- navbar -->
-    <!-- Navbar -->
     <!-- Navbar -->
     <nav class="fixed top-0 inset-x-0 z-50 bg-navy-900/80 backdrop-blur border-b border-white/10">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -191,15 +189,12 @@
         </div>
     </nav>
 
-    <!-- Spacer so content isn't hidden behind fixed nav -->
-    <!-- <div class="h-16"></div> -->
-
     <script>
         const navToggle = document.getElementById('navToggle');
         const mobileMenu = document.getElementById('mobileMenu');
-        navToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        if (navToggle && mobileMenu) {
+            navToggle.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        }
     </script>
 
     <!-- Header / Hero -->
@@ -214,10 +209,10 @@
                     <div data-aos="fade-right" data-aos-duration="900">
                         <p class="uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">Presenting</p>
                         <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                            Mumbai’s <span class="block text-gradient">Exclusive Realty Forum 2025 </span>
+                            Mumbai’s <span class="block text-gradient">Exclusive Realty Forum 2025</span>
                         </h1>
                         <p class="mt-4 text-white/80 text-lg max-w-2xl">
-                            Date and Time unit
+                            27th Sept to 3rd Oct
                         </p>
 
                         <div class="mt-6 flex flex-col sm:flex-row gap-3">
@@ -232,10 +227,10 @@
                         </div>
 
                         <div class="mt-5 flex flex-wrap gap-6 text-white/80">
-                            <div class="flex items-center gap-2"><i class="bi bi-telephone-fill text-gold-500"></i> +971
-                                4 XXX XXXX</div>
+                            <div class="flex items-center gap-2"><i class="bi bi-telephone-fill text-gold-500"></i>
+                                +919920015677</div>
                             <div class="flex items-center gap-2"><i class="bi bi-envelope-fill text-gold-500"></i>
-                                info@luxxare.ae</div>
+                                preeyancc.donde@hubtown.co.in</div>
                         </div>
                     </div>
 
@@ -244,29 +239,46 @@
                         <div class="bg-white rounded-2xl shadow-lux p-6 sm:p-8 w-full max-w-md">
                             <h3 class="font-serif text-2xl font-bold text-navy-900">Book A Site Visit</h3>
                             <p class="text-slate-500 mt-1 mb-5">Get exclusive access to luxury properties</p>
-                            <form class="space-y-4 text-navy-900">
-                                <input type="text" placeholder="Full Name"
+
+                            <form class="space-y-4 text-navy-900" aria-describedby="privacy-note-hero">
+                                <!-- Accessible labels (visually hidden) -->
+                                <label for="full-name-hero" class="sr-only">Full Name</label>
+                                <input id="full-name-hero" name="full_name" type="text" placeholder="Full Name*"
+                                    required
                                     class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
-                                <input type="email" placeholder="Email Address"
+
+                                <label for="email-hero" class="sr-only">Email Address</label>
+                                <input id="email-hero" name="email" type="email" placeholder="Email Address*" required
                                     class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
-                                <input type="tel" placeholder="Mobile Number"
+
+                                <label for="phone-hero" class="sr-only">Mobile Number</label>
+                                <input id="phone-hero" name="phone" type="tel" placeholder="Mobile Number*" required
                                     class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
-                                <select
-                                    class="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-gold-400">
-                                    <option selected>Select Property Type</option>
-                                    <option>Luxury Apartment</option>
-                                    <option>Premium Villa</option>
-                                    <option>Exclusive Penthouse</option>
-                                    <option>Townhouse</option>
-                                </select>
-                                <select
-                                    class="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-gold-400">
-                                    <option selected>Budget Range</option>
-                                    <option>AED 2.5M - 5M</option>
-                                    <option>AED 5M - 10M</option>
-                                    <option>AED 10M - 20M</option>
-                                    <option>AED 20M+</option>
-                                </select>
+                                <p id="privacy-note-hero" class="text-slate-500 text-sm leading-relaxed">
+                                    Please visit
+                                    <a href="/privacy-policy.html"
+                                        class="underline decoration-gold-400 decoration-2 underline-offset-2">Privacy
+                                        Policy</a>
+                                    to understand how Hubtown handles your personal data.
+                                </p>
+
+                                <div class="flex items-start gap-3">
+                                    <input id="consent-hero" name="consent" type="checkbox" required
+                                        class="mt-1 h-4 w-4 rounded border-slate-300 text-navy-900 focus:ring-gold-400" />
+                                    <label for="consent-hero" class="text-sm text-slate-700">
+                                        I agree to the Privacy Policy and consent to be contacted via phone, email, or
+                                        WhatsApp about this inquiry.
+                                    </label>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <input id="updates-hero" name="marketing_updates" type="checkbox"
+                                        class="mt-1 h-4 w-4 rounded border-slate-300 text-navy-900 focus:ring-gold-400" />
+                                    <label for="updates-hero" class="text-sm text-slate-700">
+                                        Keep me updated on news, launches, and exclusive offers.
+                                    </label>
+                                </div>
+
                                 <button type="submit"
                                     class="w-full py-3 rounded-lg bg-navy-900 text-white font-semibold hover:opacity-90 transition">SUBMIT</button>
                             </form>
@@ -307,14 +319,6 @@
                         Hubtown has built a legacy of premium living and workspaces that continue to shape India’s real
                         estate landscape.
                     </p>
-                    <div class="mt-6 hidden flex d-none flex-col sm:flex-row gap-3">
-                        <a href="#properties"
-                            class="gold-button inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all">Our
-                            Portfolio</a>
-                        <a href="#why-luxora"
-                            class="inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold border border-slate-300 text-navy-900 hover:bg-slate-50 transition-all">Company
-                            Story</a>
-                    </div>
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="900" data-aos-delay="120" class="relative">
                     <div class="rounded-2xl overflow-hidden shadow-lux">
@@ -361,13 +365,10 @@
                 <!-- 1 -->
                 <div class="bg-white rounded-2xl shadow-soft overflow-hidden group" data-aos="fade-up">
                     <div class="relative">
-                        <img src="assets/img/luxury-penthouse.jpg" alt="Luxora Heights"
+                        <img src="assets/img/Celeste-SS.png" alt="Hubtown Celeste"
                             class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" />
                         <span
                             class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900">Celeste</span>
-                        <span
-                            class="absolute top-4 right-4 px-3 py-1 rounded-full text-sm font-bold bg-white text-navy-900 shadow-soft">AED
-                            2.5M</span>
                     </div>
                     <div class="p-6">
                         <h3 class="font-serif text-xl font-bold text-navy-900">Hubtown Celeste</h3>
@@ -382,13 +383,11 @@
                 <div class="bg-white rounded-2xl shadow-soft overflow-hidden group" data-aos="fade-up"
                     data-aos-delay="75">
                     <div class="relative">
-                        <img src="assets/img/luxury-villa.jpg" alt="Marina Luxora"
+                        <img src="assets/img/rising-ss.jpg" alt="Hubtown Rising City"
                             class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" />
                         <span
-                            class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900">Rising City</span>
-                        <span
-                            class="absolute top-4 right-4 px-3 py-1 rounded-full text-sm font-bold bg-white text-navy-900 shadow-soft">AED
-                            3.2M</span>
+                            class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900">Rising
+                            City</span>
                     </div>
                     <div class="p-6">
                         <h3 class="font-serif text-xl font-bold text-navy-900">Hubtown Rising City</h3>
@@ -399,7 +398,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- 3 -->
+                <!-- 3 (placeholder kept hidden by design if needed) -->
                 <div class="hidden bg-white rounded-2xl shadow-soft overflow-hidden group" data-aos="fade-up"
                     data-aos-delay="150">
                     <div class="relative">
@@ -408,9 +407,6 @@
                         <span
                             class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900">PALM
                             JUMEIRAH</span>
-                        <span
-                            class="absolute top-4 right-4 px-3 py-1 rounded-full text-sm font-bold bg-white text-navy-900 shadow-soft">AED
-                            5.8M</span>
                     </div>
                     <div class="p-6">
                         <h3 class="font-serif text-xl font-bold text-navy-900">Luxora Palm</h3>
@@ -430,9 +426,6 @@
                         <span
                             class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900">DUBAI
                             CREEK</span>
-                        <span
-                            class="absolute top-4 right-4 px-3 py-1 rounded-full text-sm font-bold bg-white text-navy-900 shadow-soft">AED
-                            2.9M</span>
                     </div>
                     <div class="p-6">
                         <h3 class="font-serif text-xl font-bold text-navy-900">Luxora Creek</h3>
@@ -452,9 +445,6 @@
                         <span
                             class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900">BUSINESS
                             BAY</span>
-                        <span
-                            class="absolute top-4 right-4 px-3 py-1 rounded-full text-sm font-bold bg-white text-navy-900 shadow-soft">AED
-                            4.1M</span>
                     </div>
                     <div class="p-6">
                         <h3 class="font-serif text-xl font-bold text-navy-900">Luxora Sky</h3>
@@ -474,9 +464,6 @@
                         <span
                             class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900">JUMEIRAH
                             BEACH</span>
-                        <span
-                            class="absolute top-4 right-4 px-3 py-1 rounded-full text-sm font-bold bg-white text-navy-900 shadow-soft">AED
-                            6.3M</span>
                     </div>
                     <div class="p-6">
                         <h3 class="font-serif text-xl font-bold text-navy-900">Luxora Elite</h3>
@@ -505,9 +492,6 @@
                 <p class="uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">Why Invest in Mumbai?</p>
                 <h2 class="font-serif text-4xl font-bold text-navy-900">A Global City with Strong Returns</h2>
                 <div class="lux-divider mx-auto my-4"></div>
-                <p class="text-lg text-slate-600 hidden">Tax-free income, world-class infrastructure, and high rental
-                    yields
-                    make Dubai a top destination for real estate investment.</p>
             </div>
 
             <div class="mt-10 grid md:grid-cols-3 gap-6">
@@ -529,8 +513,7 @@
                     <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-graph-up-arrow"></i></div>
                     <h3 class="font-serif text-xl font-bold text-navy-900">Infrastructure Boom</h3>
                     <p class="text-slate-600 mt-2">Mumbai Metro, Coastal Road, MTHL, and Navi Mumbai Airport are
-                        transforming connectivity.
-                    </p>
+                        transforming connectivity.</p>
                 </div>
                 <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
                     data-aos="fade-up" data-aos-delay="75">
@@ -544,8 +527,7 @@
                     <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-graph-up-arrow"></i></div>
                     <h3 class="font-serif text-xl font-bold text-navy-900">Limited Land Supply</h3>
                     <p class="text-slate-600 mt-2">Scarcity of developable land keeps property values appreciating
-                        steadily over time.
-                    </p>
+                        steadily over time.</p>
                 </div>
                 <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
                     data-aos="fade-up">
@@ -558,20 +540,17 @@
         </div>
     </section>
 
-    <!-- Why Luxora + Timeline -->
+    <!-- Why Luxora + Quick Links + Bottom Form -->
     <section id="why-luxora" class="py-16 lg:py-24 text-white relative overflow-hidden" style="background:#0b1222;">
         <div class="absolute inset-0 opacity-20 pointer-events-none" style="background:
-        radial-gradient(600px 300px at 10% 10%, rgba(242,211,106,0.25), transparent),
-        radial-gradient(600px 300px at 90% 20%, rgba(242,211,106,0.2), transparent);"></div>
+      radial-gradient(600px 300px at 10% 10%, rgba(242,211,106,0.25), transparent),
+      radial-gradient(600px 300px at 90% 20%, rgba(242,211,106,0.2), transparent);"></div>
 
         <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="900">
                 <p class="uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">Why Hubtown?</p>
                 <h2 class="font-serif text-4xl font-bold">Trusted Developers. Prime Locations. Exceptional Quality.</h2>
                 <div class="lux-divider mx-auto my-4"></div>
-                <p class="text-white/80 hidden">For over a decade, Luxora has delivered premium developments that
-                    redefine
-                    luxury living.</p>
             </div>
 
             <div class="mt-10 grid md:grid-cols-4 gap-6">
@@ -600,106 +579,113 @@
                 </div>
             </div>
 
-            <!-- Timeline -->
-            <div class="mt-12 hidden" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="font-serif text-2xl font-bold mb-6">Luxora Timeline</h3>
-                <div class="relative pl-6">
-                    <div class="absolute left-2 top-0 bottom-0 w-px bg-white/20"></div>
-                    <div class="space-y-6">
-                        <div class="relative">
-                            <div class="absolute -left-[11px] top-1 w-3 h-3 rounded-full bg-gold-500"></div>
-                            <div class="bg-white/10 rounded-xl p-4">
-                                <div class="text-gold-500 font-semibold">2010</div>
-                                <div class="font-serif font-bold">Luxora Launched</div>
-                                <p class="text-white/80 text-sm">Established with a mission to redefine luxury living in
-                                    Dubai.</p>
-                            </div>
-                        </div>
-                        <div class="relative">
-                            <div class="absolute -left-[11px] top-1 w-3 h-3 rounded-full bg-gold-500"></div>
-                            <div class="bg-white/10 rounded-xl p-4">
-                                <div class="text-gold-500 font-semibold">2015</div>
-                                <div class="font-serif font-bold">Expansion</div>
-                                <p class="text-white/80 text-sm">Entered new prime locations with flagship developments.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="relative">
-                            <div class="absolute -left-[11px] top-1 w-3 h-3 rounded-full bg-gold-500"></div>
-                            <div class="bg-white/10 rounded-xl p-4">
-                                <div class="text-gold-500 font-semibold">2019</div>
-                                <div class="font-serif font-bold">Awards</div>
-                                <p class="text-white/80 text-sm">Recognized for excellence in design and delivery.</p>
-                            </div>
-                        </div>
-                        <div class="relative">
-                            <div class="absolute -left-[11px] top-1 w-3 h-3 rounded-full bg-gold-500"></div>
-                            <div class="bg-white/10 rounded-xl p-4">
-                                <div class="text-gold-500 font-semibold">2023</div>
-                                <div class="font-serif font-bold">New Milestones</div>
-                                <p class="text-white/80 text-sm">Launched luxury communities with enhanced lifestyle
-                                    amenities.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Bottom Form (matched fields, privacy note, and checkboxes) -->
+            <div class="mt-12 grid lg:grid-cols-2 gap-8 items-start">
+                <div class="bg-white rounded-2xl shadow-lux p-6 sm:p-8 w-full max-w-xl" data-aos="fade-up">
+                    <h3 class="font-serif text-2xl font-bold text-navy-900">Book A Site Visit</h3>
+                    <p class="text-slate-500 mt-1 mb-5">Get exclusive access to luxury properties</p>
 
-            <!-- Footer-like quick links inside section -->
-            <div class="mt-12 border-t border-white/10 pt-8">
-                <div class="grid md:grid-cols-4 gap-8">
-                    <div>
-                        <h4 class="font-serif text-xl font-bold text-gold-500">Company</h4>
-                        <ul class="mt-3 space-y-2 text-white/80 text-sm">
-                            <li><a class="hover:underline" href="#">About</a></li>
-                            <li><a class="hover:underline" href="#">Careers</a></li>
-                            <li><a class="hover:underline" href="#">Press</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-serif text-xl font-bold text-gold-500">Properties</h4>
-                        <ul class="mt-3 space-y-2 text-white/80 text-sm">
-                            <li><a class="hover:underline" href="#">Apartments</a></li>
-                            <li><a class="hover:underline" href="#">Villas</a></li>
-                            <li><a class="hover:underline" href="#">Penthouses</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-serif text-xl font-bold text-gold-500">Legal</h4>
-                        <ul class="mt-3 space-y-2 text-white/80 text-sm">
-                            <li><a class="hover:underline" href="#">Privacy Policy</a></li>
-                            <li><a class="hover:underline" href="#">Terms of Service</a></li>
-                            <li><a class="hover:underline" href="#">Cookie Policy</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-serif text-xl font-bold text-gold-500">Contact</h4>
-                        <ul class="mt-3 space-y-2 text-white/80 text-sm">
-                            <li><i class="bi bi-telephone-fill text-gold-500"></i> +971 4 XXX XXXX</li>
-                            <li><i class="bi bi-envelope-fill text-gold-500"></i> info@luxxare.ae</li>
-                            <li><i class="bi bi-geo-alt-fill text-gold-500"></i> Business Bay, Dubai — UAE</li>
-                        </ul>
-                        <div class="flex gap-2 mt-3">
-                            <a class="border border-white/20 hover:bg-white/10 text-white rounded-full w-8 h-8 flex items-center justify-center"
-                                href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                            <a class="border border-white/20 hover:bg-white/10 text-white rounded-full w-8 h-8 flex items-center justify-center"
-                                href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                            <a class="border border-white/20 hover:bg-white/10 text-white rounded-full w-8 h-8 flex items-center justify-center"
-                                href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-                            <a class="border border-white/20 hover:bg-white/10 text-white rounded-full w-8 h-8 flex items-center justify-center"
-                                href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                            <a class="border border-white/20 hover:bg-white/10 text-white rounded-full w-8 h-8 flex items-center justify-center"
-                                href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    <form class="space-y-4 text-navy-900" aria-describedby="privacy-note-bottom">
+                        <label for="full-name-bottom" class="sr-only">Full Name</label>
+                        <input id="full-name-bottom" name="full_name" type="text" placeholder="Full Name*" required
+                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
+
+                        <label for="email-bottom" class="sr-only">Email Address</label>
+                        <input id="email-bottom" name="email" type="email" placeholder="Email Address*" required
+                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
+
+                        <label for="phone-bottom" class="sr-only">Mobile Number</label>
+                        <input id="phone-bottom" name="phone" type="tel" placeholder="Mobile Number*" required
+                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
+
+                        <p id="privacy-note-bottom" class="text-slate-500 text-sm leading-relaxed">
+                            Please visit
+                            <a href="/privacy-policy.html"
+                                class="underline decoration-gold-400 decoration-2 underline-offset-2">Privacy Policy</a>
+                            to understand how Hubtown handles your personal data.
+                        </p>
+
+                        <div class="flex items-start gap-3">
+                            <input id="consent-bottom" name="consent" type="checkbox" required
+                                class="mt-1 h-4 w-4 rounded border-slate-300 text-navy-900 focus:ring-gold-400" />
+                            <label for="consent-bottom" class="text-sm text-slate-700">
+                                I agree to the Privacy Policy and consent to be contacted via phone, email, or WhatsApp
+                                about this inquiry.
+                            </label>
                         </div>
-                    </div>
+
+                        <div class="flex items-start gap-3">
+                            <input id="updates-bottom" name="marketing_updates" type="checkbox"
+                                class="mt-1 h-4 w-4 rounded border-slate-300 text-navy-900 focus:ring-gold-400" />
+                            <label for="updates-bottom" class="text-sm text-slate-700">
+                                Keep me updated on news, launches, and exclusive offers.
+                            </label>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full py-3 rounded-lg bg-navy-900 text-white font-semibold hover:opacity-90 transition">
+                            SUBMIT
+                        </button>
+                    </form>
                 </div>
 
-                <div class="mt-8 flex flex-col lg:flex-row items-center justify-between gap-4 text-white/70 text-sm">
-                    <div>© 2025 Luxora Properties. All rights reserved.</div>
-                    <div class="flex gap-4">
-                        <a class="hover:underline" href="#">Privacy</a>
-                        <a class="hover:underline" href="#">Terms</a>
-                        <a class="hover:underline" href="#">Cookies</a>
+                <!-- Footer-like quick links inside section -->
+                <div class="lg:pl-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-serif text-xl font-bold text-gold-500">Company</h4>
+                            <ul class="mt-3 space-y-2 text-white/80 text-sm">
+                                <li><a class="hover:underline" href="#">About</a></li>
+                                <li><a class="hover:underline" href="#">Careers</a></li>
+                                <li><a class="hover:underline" href="#">Press</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-serif text-xl font-bold text-gold-500">Properties</h4>
+                            <ul class="mt-3 space-y-2 text-white/80 text-sm">
+                                <li><a class="hover:underline" href="#">Apartments</a></li>
+                                <li><a class="hover:underline" href="#">Villas</a></li>
+                                <li><a class="hover:underline" href="#">Penthouses</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-serif text-xl font-bold text-gold-500">Legal</h4>
+                            <ul class="mt-3 space-y-2 text-white/80 text-sm">
+                                <li><a class="hover:underline" href="#">Privacy Policy</a></li>
+                                <li><a class="hover:underline" href="#">Terms of Service</a></li>
+                                <li><a class="hover:underline" href="#">Cookie Policy</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-serif text-xl font-bold text-gold-500">Contact</h4>
+                            <ul class="mt-3 space-y-2 text-white/80 text-sm">
+                                <li><i class="bi bi-telephone-fill text-gold-500"></i> +919920015677</li>
+                                <li><i class="bi bi-envelope-fill text-gold-500"></i> preeyancc.donde@hubtown.co.in</li>
+                                <li><i class="bi bi-geo-alt-fill text-gold-500"></i> Address - Mumbai</li>
+                            </ul>
+                            <div class="flex gap-2 mt-3">
+                                <a class="border border-white/20 hover:bg-white/10 text-white rounded-full w-8 h-8 flex items-center justify-center"
+                                    href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a class="border border-white/20 hover:bg-white/10 text-white rounded-full w-8 h-8 flex items-center justify-center"
+                                    href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                                <a class="border border-white/20 hover:bg-white/10 text-white rounded-full w-8 h-8 flex items-center justify-center"
+                                    href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                                <a class="border border-white/20 hover:bg-white/10 text-white rounded-full w-8 h-8 flex items-center justify-center"
+                                    href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a class="border border-white/20 hover:bg-white/10 text-white rounded-full w-8 h-8 flex items-center justify-center"
+                                    href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mt-8 flex flex-col lg:flex-row items-center justify-between gap-4 text-white/70 text-sm">
+                        <div>© 2025 Luxora Properties. All rights reserved.</div>
+                        <div class="flex gap-4">
+                            <a class="hover:underline" href="#">Privacy</a>
+                            <a class="hover:underline" href="#">Terms</a>
+                            <a class="hover:underline" href="#">Cookies</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -715,10 +701,11 @@
                     <p class="text-slate-600 mt-1">Get the latest luxury property updates and exclusive investment
                         opportunities.</p>
                 </div>
-                <form class="flex flex-col sm:flex-row gap-3">
-                    <input
+                <form class="flex flex-col sm:flex-row gap-3" aria-label="Newsletter subscription form">
+                    <label for="newsletter-email" class="sr-only">Email</label>
+                    <input id="newsletter-email"
                         class="flex-1 px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400"
-                        type="email" placeholder="Enter your email" />
+                        type="email" placeholder="Enter your email" required />
                     <button class="gold-button px-6 py-3 rounded-lg font-semibold">Subscribe</button>
                 </form>
             </div>
@@ -727,7 +714,9 @@
 
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>AOS.init({ once: true, offset: 80, duration: 700, easing: 'ease-out-cubic' });</script>
+    <script>
+        AOS.init({ once: true, offset: 80, duration: 700, easing: 'ease-out-cubic' });
+    </script>
 </body>
 
 </html>
