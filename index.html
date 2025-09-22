@@ -236,11 +236,11 @@
     <!-- Navbar -->
     <nav class="fixed top-0 inset-x-0 z-50 bg-navy-900/80 backdrop-blur border-b border-white/10">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
+            <div class="flex items-center justify-between h-20">
                 <!-- Brand -->
                 <a href="#hero" class="flex items-center gap-2" aria-label="Hubtown 25 Residences">
                     <img src="/assets/logo/hubtown-25residences-logo-removebg.png" alt="Hubtown 25 Residences logo"
-                        class="block h-8 md:h-9 w-auto max-w-[200px] object-contain select-none" loading="eager"
+                        class="block h-8 md:h-14 w-auto max-w-[200px] object-contain select-none" loading="eager"
                         decoding="async" />
                 </a>
 
@@ -416,15 +416,16 @@
                         <div class="bg-white rounded-xl shadow-soft p-5">
                             <div class="grid grid-cols-3 text-center gap-4">
                                 <div>
-                                    <div class="text-2xl font-bold text-navy-900">40+</div>
+                                    <div class="text-2xl font-bold text-navy-900"><span class="counter" data-target="40"></span>+</div>
                                     <div class="text-sm text-slate-500">Years Experience</div>
                                 </div>
                                 <div>
-                                    <div class="text-2xl font-bold text-navy-900">45+</div>
+                                    <div class="text-2xl font-bold text-navy-900"><span class="counter" data-target="45"></span>+</div>
                                     <div class="text-sm text-slate-500">Projects</div>
                                 </div>
                                 <div>
-                                    <div class="text-2xl font-bold text-navy-900">25000+</div>
+                                    <div class="text-2xl font-bold text-navy-900"><span class="counter" data-target="2500"></span>+
+                                    </div>
                                     <div class="text-sm text-slate-500">Families</div>
                                 </div>
                             </div>
@@ -787,6 +788,40 @@
             });
         });
     </script>
+
+    <script>
+        // Number counter animation when in viewport
+        const counters = document.querySelectorAll('.counter');
+
+        const animateCounter = (el) => {
+            const target = +el.getAttribute('data-target');
+            const duration = 1500;
+            const start = performance.now();
+
+            const step = (timestamp) => {
+                const progress = Math.min((timestamp - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+                const value = Math.floor(eased * target);
+                el.textContent = value.toLocaleString(); // adds commas
+                if (progress < 1) requestAnimationFrame(step);
+                else el.textContent = target.toLocaleString();
+            };
+
+            requestAnimationFrame(step);
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    observer.unobserve(entry.target); // only once
+                }
+            });
+        }, { threshold: 0.6 });
+
+        counters.forEach(counter => observer.observe(counter));
+    </script>
+
     <script>
         // Utility: open/close modal
         const enquireModal = document.getElementById('enquireModal');
