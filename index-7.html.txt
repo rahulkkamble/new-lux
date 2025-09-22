@@ -5,17 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Hubtown Real Estate — Luxury Homes & Apartments in Mumbai</title>
-    <meta name="description" content="Discover Mumbai’s most exclusive properties in prestigious locations." />
-    <meta name="author" content="Hubtown Real Estate" />
+    <title>Luxora Real Estate — Luxury Homes & Apartments in Dubai</title>
+    <meta name="description"
+        content="Discover Dubai’s most exclusive properties in prestigious locations. Luxury apartments, villas, and penthouses starting from AED 2.5M." />
+    <meta name="author" content="Luxora Real Estate" />
 
     <!-- Google Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
-    <!-- <link
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet" /> -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+        rel="stylesheet" />
 
     <!-- Bootstrap Icons (for simple icons) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
@@ -58,42 +58,6 @@
     </script>
 
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        @font-face {
-            font-family: 'Daloire';
-            src: url('assets/fonts/deloire-modern-luxury-sans-2023-11-27-05-02-57-utc/Deloire\ Medium.ttf') format('truetype');
-            font-weight: 500;
-            /* Medium */
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Daloire';
-            src: url('assets/fonts/deloire-modern-luxury-sans-2023-11-27-05-02-57-utc/Deloire\ Bold.ttf') format('truetype');
-            font-weight: 700;
-            /* Bold */
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Belgan';
-            src: url('assets/fonts/Belgan\ Aesthetic.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        p,
-        div,
-        span,
-        li,
-        input {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-
         .text-gradient {
             background: linear-gradient(90deg, #e7c04b, #f7e3a2);
             -webkit-background-clip: text;
@@ -179,57 +143,6 @@
             }
         }
     </style>
-    <style>
-        /* Modal backdrop and panel */
-        .enquire-backdrop {
-            position: fixed;
-            inset: 0;
-            z-index: 50;
-            background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(4px);
-        }
-
-        .enquire-panel {
-            background: #fff;
-            border-radius: 18px;
-            box-shadow: 0 25px 50px -12px rgba(9, 14, 26, 0.25);
-        }
-
-        /* Sticky enquire button (desktop) */
-        .sticky-enquire {
-            position: fixed;
-            z-index: 40;
-            right: 1.25rem;
-            bottom: 1.25rem;
-        }
-
-        /* Mobile bottom action strip */
-        .mobile-action-strip {
-            position: fixed;
-            inset-x: 0;
-            bottom: 0;
-            z-index: 40;
-            background: rgba(11, 18, 34, 0.92);
-            backdrop-filter: blur(8px);
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        @media (max-width: 767px) {
-            body {
-                padding-bottom: 70px;
-            }
-
-            /* height of your strip */
-        }
-
-        .mobile-action-strip {
-            z-index: 40;
-        }
-
-        .enquire-backdrop {
-            z-index: 50;
-        }
-    </style>
 </head>
 
 <body class="font-sans text-slate-900 bg-white">
@@ -251,9 +164,9 @@
                     <a href="#welcome" class="text-sm text-white/90 hover:text-gold-500 transition">About</a>
                     <a href="#properties" class="text-sm text-white/90 hover:text-gold-500 transition">Properties</a>
                     <a href="#invest" class="text-sm text-white/90 hover:text-gold-500 transition">Invest</a>
-                    <a href="#why-hubtown" class="text-sm text-white/90 hover:text-gold-500 transition">Why Hubtown</a>
-                    <a href="#why-hubtown" class="text-sm text-white/90 hover:text-gold-500 transition">Contact</a>
-                    <a id="bookNowBtn" href="javascript:void(0);"
+                    <a href="#why-luxora" class="text-sm text-white/90 hover:text-gold-500 transition">Why Luxora</a>
+                    <a href="#contact" class="text-sm text-white/90 hover:text-gold-500 transition">Contact</a>
+                    <a href="#contact"
                         class="ml-2 text-white/90 hover:text-gold-500 transition inline-flex items-center px-4 py-2 rounded-lg border border-white/30 text-sm hover:bg-white/10 transition">
                         Book Now
                     </a>
@@ -282,13 +195,13 @@
                 <li><a href="#invest"
                         class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Invest</a>
                 </li>
-                <li><a href="#why-hubtown"
+                <li><a href="#why-luxora"
                         class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Why
-                        Hubtown</a></li>
-                <li><a href="#why-hubtown"
+                        Luxora</a></li>
+                <li><a href="#contact"
                         class="block rounded-md px-3 py-2 text-sm text-white/90 hover:text-gold-500 hover:bg-white/5 transition">Contact</a>
                 </li>
-                <li><a href="#why-hubtown"
+                <li><a href="#contact"
                         class="mt-1 block rounded-md px-3 py-2 text-center text-sm border border-white/30 hover:bg-white/10 transition">Book
                         Now</a></li>
             </ul>
@@ -313,9 +226,8 @@
                 <div class="grid lg:grid-cols-2 gap-10 items-center min-h-[85vh] py-14">
                     <!-- Left: Headline -->
                     <div data-aos="fade-right" data-aos-duration="900">
-                        <p class="font-['Daloire'] uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">
-                            Presenting</p>
-                        <h1 class="font-['Belgan'] text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                        <p class="uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">Presenting</p>
+                        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                             Mumbai’s <span class="block text-gradient">Exclusive Realty Forum 2025</span>
                         </h1>
                         <p class="mt-4 text-white/80 text-lg max-w-2xl">
@@ -331,18 +243,16 @@
 
                         <div class="mt-5 flex flex-wrap gap-6 text-white/80">
                             <div class="flex items-center gap-2"><i class="bi bi-telephone-fill text-gold-500"></i>
-                                <a href="tel:+919920015677">+919920015677</a>
-                            </div>
+                                +919920015677</div>
                             <div class="flex items-center gap-2"><i class="bi bi-envelope-fill text-gold-500"></i>
-                                <a href="mailto:preeyancc.donde@hubtown.co.in">preeyancc.donde@hubtown.co.in</a>
-                            </div>
+                                preeyancc.donde@hubtown.co.in</div>
                         </div>
                     </div>
 
                     <!-- Right: Book a site visit form -->
                     <div data-aos="fade-left" data-aos-duration="900" data-aos-delay="120" class="lg:justify-self-end">
                         <div class="bg-white rounded-2xl shadow-lux p-6 sm:p-8 w-full max-w-md">
-                            <h3 class="font-['Daloire'] text-2xl font-bold text-navy-900">Book A Site Visit</h3>
+                            <h3 class="font-serif text-2xl font-bold text-navy-900">Book A Site Visit</h3>
                             <p class="text-slate-500 mt-1 mb-5">Get exclusive access to luxury properties</p>
 
                             <form class="space-y-4 text-navy-900" aria-describedby="privacy-note-hero">
@@ -387,11 +297,9 @@
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-right" data-aos-duration="900">
-                    <p class="font-['Daloire'] uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">Your
-                        Exclusive Invitation
+                    <p class="uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">Your Exclusive Invitation
                     </p>
-                    <h2 class="font-['Daloire'] text-3xl sm:text-4xl font-bold text-navy-900">Meet the Promoter, Rushank
-                        Shah
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900">Meet the Promoter, Rushank Shah
                     </h2>
                     <div class="lux-divider my-5"></div>
                     <p class="text-lg text-slate-600 leading-relaxed">
@@ -409,7 +317,7 @@
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="900" data-aos-delay="120" class="relative">
                     <div class="rounded-2xl overflow-hidden shadow-lux">
-                        <img src="assets/img/section-2_promoter-min.png" alt="Luxury interior"
+                        <img src="assets/img/luxury-apartment.jpg" alt="Luxury interior"
                             class="w-full h-[520px] object-cover" />
                     </div>
                     <div class="absolute -bottom-10 left-6 right-6">
@@ -441,7 +349,7 @@
             <div class="text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="900">
                 <p class="uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">Trending Hubtown Properties
                 </p>
-                <h2 class="font-['Daloire'] text-4xl font-bold text-navy-900">Handpicked Luxury Listings</h2>
+                <h2 class="font-serif text-4xl font-bold text-navy-900">Handpicked Luxury Listings</h2>
                 <div class="lux-divider mx-auto my-4"></div>
                 <p class="text-lg text-slate-600">Explore our curated selection of Mumbai’s finest properties across
                     iconic neighborhoods.</p>
@@ -458,7 +366,7 @@
                             class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900 hidden">Celeste</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Hubtown Celeste</h3>
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Hubtown Celeste</h3>
                         <p class="text-slate-500 text-sm mb-4">Off Worli Sea Face</p>
                         <div class="flex justify-between items-center border-t pt-4">
                             <span class="text-sm font-semibold text-navy-900">Spacious 2 and 3 BHK</span>
@@ -477,7 +385,7 @@
                             City</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Hubtown Rising City</h3>
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Hubtown Rising City</h3>
                         <p class="text-slate-500 text-sm mb-4">Ghatkopar</p>
                         <div class="flex justify-between items-center border-t pt-4">
                             <span class="text-sm font-semibold text-navy-900">Exclusive 1, 2 & 3 Bed Homes</span>
@@ -485,9 +393,86 @@
                         </div>
                     </div>
                 </div>
+                <!-- 3 (placeholder kept hidden by design if needed) -->
+                <div class="hidden bg-white rounded-2xl shadow-soft overflow-hidden group" data-aos="fade-up"
+                    data-aos-delay="150">
+                    <div class="relative">
+                        <img src="assets/img/luxury-apartment.jpg" alt="Luxora Palm"
+                            class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <span
+                            class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900">PALM
+                            JUMEIRAH</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Luxora Palm</h3>
+                        <p class="text-slate-500 text-sm mb-4">Palm Jumeirah</p>
+                        <div class="flex justify-between items-center border-t pt-4">
+                            <span class="text-sm font-semibold text-navy-900">4 Beds • 5 Baths • 3,200 sq ft</span>
+                            <a href="#" class="text-gold-500 font-semibold text-sm hover:underline">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="hidden bg-white rounded-2xl shadow-soft overflow-hidden group" data-aos="fade-up"
+                    data-aos-delay="225">
+                    <div class="relative">
+                        <img src="assets/img/luxury-penthouse.jpg" alt="Luxora Creek"
+                            class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <span
+                            class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900">DUBAI
+                            CREEK</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Luxora Creek</h3>
+                        <p class="text-slate-500 text-sm mb-4">Dubai Creek</p>
+                        <div class="flex justify-between items-center border-t pt-4">
+                            <span class="text-sm font-semibold text-navy-900">3 Beds • 3 Baths • 2,200 sq ft</span>
+                            <a href="#" class="text-gold-500 font-semibold text-sm hover:underline">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="hidden bg-white rounded-2xl shadow-soft overflow-hidden group" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="relative">
+                        <img src="assets/img/luxury-villa.jpg" alt="Luxora Sky"
+                            class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <span
+                            class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900">BUSINESS
+                            BAY</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Luxora Sky</h3>
+                        <p class="text-slate-500 text-sm mb-4">Business Bay</p>
+                        <div class="flex justify-between items-center border-t pt-4">
+                            <span class="text-sm font-semibold text-navy-900">3 Beds • 4 Baths • 2,600 sq ft</span>
+                            <a href="#" class="text-gold-500 font-semibold text-sm hover:underline">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="hidden bg-white rounded-2xl shadow-soft overflow-hidden group" data-aos="fade-up"
+                    data-aos-delay="375">
+                    <div class="relative">
+                        <img src="assets/img/luxury-apartment.jpg" alt="Luxora Elite"
+                            class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <span
+                            class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900">JUMEIRAH
+                            BEACH</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-navy-900">Luxora Elite</h3>
+                        <p class="text-slate-500 text-sm mb-4">Jumeirah Beach</p>
+                        <div class="flex justify-between items-center border-t pt-4">
+                            <span class="text-sm font-semibold text-navy-900">5 Beds • 6 Baths • 4,100 sq ft</span>
+                            <a href="#" class="text-gold-500 font-semibold text-sm hover:underline">View Details →</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <!-- CTA -->
-            <div class="pt-10 lg:pt-12 text-center" data-aos="zoom-in" data-aos-delay="150">
+            <div class="mt-12 text-center" data-aos="zoom-in" data-aos-delay="150">
                 <a href="#contact"
                     class="gold-button inline-flex items-center justify-center px-7 py-3 rounded-lg font-semibold">Ready
                     to Make Mumbai Your Home? Contact Us Today!</a>
@@ -500,7 +485,7 @@
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="900">
                 <p class="uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">Why Invest in Mumbai?</p>
-                <h2 class="font-['Daloire'] text-4xl font-bold text-navy-900">A Global City with Strong Returns</h2>
+                <h2 class="font-serif text-4xl font-bold text-navy-900">A Global City with Strong Returns</h2>
                 <div class="lux-divider mx-auto my-4"></div>
             </div>
 
@@ -508,41 +493,41 @@
                 <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
                     data-aos="fade-up">
                     <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-cash-coin"></i></div>
-                    <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Strong Rental Yields</h3>
+                    <h3 class="font-serif text-xl font-bold text-navy-900">Strong Rental Yields</h3>
                     <p class="text-slate-600 mt-2">Prime micro-markets deliver 6–8% gross rent.</p>
                 </div>
                 <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
                     data-aos="fade-up" data-aos-delay="75">
-                    <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-bank"></i></div>
-                    <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Financial Capital of India</h3>
+                    <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-building"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-navy-900">Financial Capital of India</h3>
                     <p class="text-slate-600 mt-2">Home to BSE, NSE, major banks, Fortune 500 companies — ensuring
                         steady housing demand.</p>
                 </div>
                 <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
                     data-aos="fade-up" data-aos-delay="150">
-                    <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-building"></i></div>
-                    <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Infrastructure Boom</h3>
+                    <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-graph-up-arrow"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-navy-900">Infrastructure Boom</h3>
                     <p class="text-slate-600 mt-2">Mumbai Metro, Coastal Road, MTHL, and Navi Mumbai Airport are
                         transforming connectivity.</p>
                 </div>
                 <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
                     data-aos="fade-up" data-aos-delay="75">
-                    <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-people"></i></div>
-                    <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Diverse Buyer Demand</h3>
+                    <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-building"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-navy-900">Diverse Buyer Demand</h3>
                     <p class="text-slate-600 mt-2">High population density and migration ensure consistent demand for
                         every segment.</p>
                 </div>
                 <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
                     data-aos="fade-up" data-aos-delay="150">
-                    <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-map"></i></div>
-                    <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Limited Land Supply</h3>
+                    <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-graph-up-arrow"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-navy-900">Limited Land Supply</h3>
                     <p class="text-slate-600 mt-2">Scarcity of developable land keeps property values appreciating
                         steadily over time.</p>
                 </div>
                 <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
                     data-aos="fade-up">
-                    <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-globe"></i></div>
-                    <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Global City Appeal</h3>
+                    <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-cash-coin"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-navy-900">Global City Appeal</h3>
                     <p class="text-slate-600 mt-2">Mumbai is a cultural, commercial, and entertainment hub attracting
                         global investors.</p>
                 </div>
@@ -551,7 +536,7 @@
     </section>
 
     <!-- Why Luxora + Quick Links + Bottom Form -->
-    <section id="why-hubtown" class="py-16 lg:py-24 text-white relative overflow-hidden" style="background:#0b1222;">
+    <section id="why-luxora" class="py-16 lg:py-24 text-white relative overflow-hidden" style="background:#0b1222;">
         <div class="absolute inset-0 opacity-20 pointer-events-none" style="background:
       radial-gradient(600px 300px at 10% 10%, rgba(242,211,106,0.25), transparent),
       radial-gradient(600px 300px at 90% 20%, rgba(242,211,106,0.2), transparent);"></div>
@@ -559,33 +544,32 @@
         <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="900">
                 <p class="uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">Why Hubtown?</p>
-                <h2 class="font-['Daloire'] text-4xl font-bold">Trusted Developers. Prime Locations. Exceptional
-                    Quality.</h2>
+                <h2 class="font-serif text-4xl font-bold">Trusted Developers. Prime Locations. Exceptional Quality.</h2>
                 <div class="lux-divider mx-auto my-4"></div>
             </div>
 
             <div class="mt-10 grid md:grid-cols-4 gap-6">
                 <div class="bg-white/10 rounded-2xl p-6 backdrop-blur hover:bg-white/15 transition" data-aos="fade-up">
                     <div class="text-gold-500 text-3xl mb-3">🏗️</div>
-                    <h3 class="font-['Daloire'] text-xl font-bold">13+ Million Sq. Ft.</h3>
+                    <h3 class="font-serif text-xl font-bold">13+ Million Sq. Ft.</h3>
                     <p class="text-white/80 mt-2">Delivered across Residential, Commercial & SEZ projects.</p>
                 </div>
                 <div class="bg-white/10 rounded-2xl p-6 backdrop-blur hover:bg-white/15 transition" data-aos="fade-up"
                     data-aos-delay="75">
                     <div class="text-gold-500 text-3xl mb-3">📍</div>
-                    <h3 class="font-['Daloire'] text-xl font-bold">45+ Projects</h3>
+                    <h3 class="font-serif text-xl font-bold">45+ Projects</h3>
                     <p class="text-white/80 mt-2">Currently under development across 7 major cities.</p>
                 </div>
                 <div class="bg-white/10 rounded-2xl p-6 backdrop-blur hover:bg-white/15 transition" data-aos="fade-up"
                     data-aos-delay="150">
                     <div class="text-gold-500 text-3xl mb-3">🏆</div>
-                    <h3 class="font-['Daloire'] text-xl font-bold">25,000+ Families</h3>
+                    <h3 class="font-serif text-xl font-bold">25,000+ Families</h3>
                     <p class="text-white/80 mt-2">Already living the Hubtown lifestyle.</p>
                 </div>
                 <div class="bg-white/10 rounded-2xl p-6 backdrop-blur hover:bg-white/15 transition" data-aos="fade-up"
                     data-aos-delay="75">
                     <div class="text-gold-500 text-3xl mb-3">📍</div>
-                    <h3 class="font-['Daloire'] text-xl font-bold">40+ Years</h3>
+                    <h3 class="font-serif text-xl font-bold">40+ Years</h3>
                     <p class="text-white/80 mt-2">Of shaping skylines and creating thriving communities.</p>
                 </div>
             </div>
@@ -593,7 +577,7 @@
             <!-- Bottom Form (matched fields, privacy note, and checkboxes) -->
             <div class="mt-12 grid lg:grid-cols-2 gap-8 items-start">
                 <div class="bg-white rounded-2xl shadow-lux p-6 sm:p-8 w-full max-w-xl" data-aos="fade-up">
-                    <h3 class="font-['Daloire'] text-2xl font-bold text-navy-900">Book A Site Visit</h3>
+                    <h3 class="font-serif text-2xl font-bold text-navy-900">Book A Site Visit</h3>
                     <p class="text-slate-500 mt-1 mb-5">Get exclusive access to luxury properties</p>
 
                     <form class="space-y-4 text-navy-900" aria-describedby="privacy-note-bottom">
@@ -623,7 +607,7 @@
                 <div class="lg:pl-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="grid md:grid-cols-2 gap-8">
                         <div>
-                            <h4 class="font-['Daloire'] text-xl font-bold text-gold-500">Company</h4>
+                            <h4 class="font-serif text-xl font-bold text-gold-500">Company</h4>
                             <ul class="mt-3 space-y-2 text-white/80 text-sm">
                                 <li><a class="hover:underline" href="#">About</a></li>
                                 <li><a class="hover:underline" href="#">Careers</a></li>
@@ -631,32 +615,29 @@
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-['Daloire'] text-xl font-bold text-gold-500">Properties</h4>
+                            <h4 class="font-serif text-xl font-bold text-gold-500">Properties</h4>
                             <ul class="mt-3 space-y-2 text-white/80 text-sm">
-                                <li><a class="hover:underline" href="#">1 BHK</a></li>
-                                <li><a class="hover:underline" href="#">2 BHK</a></li>
-                                <li><a class="hover:underline" href="#">3 BHK</a></li>
+                                <li><a class="hover:underline" href="#">Apartments</a></li>
+                                <li><a class="hover:underline" href="#">Villas</a></li>
+                                <li><a class="hover:underline" href="#">Penthouses</a></li>
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-['Daloire'] text-xl font-bold text-gold-500">Legal</h4>
+                            <h4 class="font-serif text-xl font-bold text-gold-500">Legal</h4>
                             <ul class="mt-3 space-y-2 text-white/80 text-sm">
                                 <li><a class="hover:underline" href="#">Privacy Policy</a></li>
-                                <!-- <li><a class="hover:underline" href="#">Terms of Service</a></li> -->
-                                <!-- <li><a class="hover:underline" href="#">Cookie Policy</a></li> -->
+                                <li><a class="hover:underline" href="#">Terms of Service</a></li>
+                                <li><a class="hover:underline" href="#">Cookie Policy</a></li>
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-['Daloire'] text-xl font-bold text-gold-500">Contact</h4>
+                            <h4 class="font-serif text-xl font-bold text-gold-500">Contact</h4>
                             <ul class="mt-3 space-y-2 text-white/80 text-sm">
-                                <li><i class="bi bi-telephone-fill text-gold-500"></i> <a
-                                        href="tel:+919920015677">+919920015677</a></li>
-                                <li><i class="bi bi-envelope-fill text-gold-500"></i> <a
-                                        href="mailto:preeyancc.donde@hubtown.co.in">preeyancc.donde@hubtown.co.in</a>
-                                </li>
+                                <li><i class="bi bi-telephone-fill text-gold-500"></i> +919920015677</li>
+                                <li><i class="bi bi-envelope-fill text-gold-500"></i> preeyancc.donde@hubtown.co.in</li>
                                 <li><i class="bi bi-geo-alt-fill text-gold-500"></i> Address - Mumbai</li>
                             </ul>
-                            <div class="hidden flex gap-2 mt-3">
+                            <div class="flex gap-2 mt-3">
                                 <a class="border border-white/20 hover:bg-white/10 text-white rounded-full w-8 h-8 flex items-center justify-center"
                                     href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                                 <a class="border border-white/20 hover:bg-white/10 text-white rounded-full w-8 h-8 flex items-center justify-center"
@@ -672,8 +653,8 @@
                     </div>
 
                     <div
-                        class="mt-8 hidden flex flex-col lg:flex-row items-center justify-between gap-4 text-white/70 text-sm">
-                        <!-- <div>© 2025 Luxora Properties. All rights reserved.</div> -->
+                        class="mt-8 flex flex-col lg:flex-row items-center justify-between gap-4 text-white/70 text-sm">
+                        <div>© 2025 Luxora Properties. All rights reserved.</div>
                         <div class="flex gap-4">
                             <a class="hover:underline" href="#">Privacy</a>
                             <a class="hover:underline" href="#">Terms</a>
@@ -690,7 +671,7 @@
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 items-center gap-8" data-aos="fade-up" data-aos-duration="900">
                 <div>
-                    <h3 class="font-['Daloire'] text-3xl font-bold text-navy-900">Stay Updated</h3>
+                    <h3 class="font-serif text-3xl font-bold text-navy-900">Stay Updated</h3>
                     <p class="text-slate-600 mt-1">Get the latest luxury property updates and exclusive investment
                         opportunities.</p>
                 </div>
@@ -705,123 +686,11 @@
         </div>
     </section>
 
-    <!-- modal -->
-    <!-- Enquire modal -->
-    <div id="enquireModal" class="hidden enquire-backdrop" aria-hidden="true">
-        <div class="flex min-h-screen items-center justify-center px-4" onclick="void(0)" id="enquireBackdrop">
-            <div class="enquire-panel w-full max-w-md relative p-6 sm:p-7" onclick="event.stopPropagation()">
-                <!-- Close icon -->
-                <button id="enquireClose"
-                    class="absolute top-3 right-3 inline-flex items-center justify-center w-9 h-9 rounded-full border border-slate-200 hover:bg-slate-50"
-                    aria-label="Close enquiry form">
-                    <i class="bi bi-x-lg"></i>
-                </button>
-
-                <h3 class="font-['Daloire'] text-2xl font-bold text-navy-900">Enquire Now</h3>
-                <p class="text-slate-500 mt-1 mb-5">Get exclusive access to luxury properties</p>
-
-                <form class="space-y-4 text-navy-900" aria-describedby="privacy-note-hero">
-                    <!-- Accessible labels (visually hidden) -->
-                    <label for="full-name-hero" class="sr-only">Full Name</label>
-                    <input id="full-name-hero" name="full_name" type="text" placeholder="Full Name*" required
-                        class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
-
-                    <label for="email-hero" class="sr-only">Email Address</label>
-                    <input id="email-hero" name="email" type="email" placeholder="Email Address*" required
-                        class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
-
-                    <label for="phone-hero" class="sr-only">Mobile Number</label>
-                    <input id="phone-hero" name="phone" type="tel" placeholder="Mobile Number*" required
-                        class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
-
-                    <label for="full-name-hero" class="sr-only">City</label>
-                    <input id="full-name-hero" name="city" type="text" placeholder="City*" required
-                        class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
-
-                    <button type="submit"
-                        class="w-full py-3 rounded-lg bg-navy-900 text-white font-semibold hover:opacity-90 transition">SUBMIT</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Desktop sticky enquire button -->
-    <a id="enquireStickyBtn" href="#"
-        class="sticky-enquire hidden md:inline-flex items-center gap-2 gold-button px-5 py-3 rounded-lg font-semibold shadow-lux">
-        <i class="bi bi-chat-dots"></i>
-        Enquire Now
-    </a>
-
-    <!-- Mobile bottom action strip -->
-    <div class="mobile-action-strip md:hidden">
-        <div class="mx-auto max-w-7xl px-4 py-3 flex items-center gap-3">
-            <a href="tel:+919920015677"
-                class="flex-1 inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 text-white/90 hover:bg-white/10 py-3">
-                <i class="bi bi-telephone-fill text-gold-500"></i>
-                Call Now
-            </a>
-            <button id="enquireMobileBtn"
-                class="flex-1 inline-flex items-center justify-center gap-2 gold-button rounded-lg py-3 font-semibold">
-                <i class="bi bi-chat-dots"></i>
-                Enquire Now
-            </button>
-        </div>
-    </div>
-
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({ once: true, offset: 80, duration: 700, easing: 'ease-out-cubic' });
     </script>
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener("click", function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute("href"));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 60, // adjust for fixed navbar height
-                        behavior: "smooth"
-                    });
-                }
-            });
-        });
-    </script>
-    <script>
-        // Utility: open/close modal
-        const enquireModal = document.getElementById('enquireModal');
-        const enquireClose = document.getElementById('enquireClose');
-        const enquireBackdrop = document.getElementById('enquireBackdrop');
-        const enquireStickyBtn = document.getElementById('enquireStickyBtn');
-        const enquireMobileBtn = document.getElementById('enquireMobileBtn');
-        const bookNowBtn = document.getElementById('bookNowBtn');
-
-        function openEnquire() {
-            enquireModal.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden'); // lock scroll
-        }
-        function closeEnquire() {
-            enquireModal.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden');
-        }
-
-        // Open from sticky and mobile buttons
-        if (enquireStickyBtn) enquireStickyBtn.addEventListener('click', (e) => { e.preventDefault(); openEnquire(); });
-        if (enquireMobileBtn) enquireMobileBtn.addEventListener('click', (e) => { e.preventDefault(); openEnquire(); });
-        if (bookNowBtn) bookNowBtn.addEventListener('click', (e) => { e.preventDefault(); openEnquire(); });
-
-        // Close modal: icon, backdrop click, Esc key
-        if (enquireClose) enquireClose.addEventListener('click', closeEnquire);
-        if (enquireBackdrop) enquireBackdrop.addEventListener('click', closeEnquire);
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeEnquire(); });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => {
-                openEnquire();
-            }, 5000);
-        });
-    </script>
-
 </body>
 
 </html>
