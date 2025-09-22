@@ -363,28 +363,47 @@
                             <h3 class="font-['Daloire'] text-2xl font-bold text-navy-900">Book A Site Visit</h3>
                             <p class="text-slate-500 mt-1 mb-5">Get exclusive access to luxury properties</p>
 
-                            <form class="space-y-4 text-navy-900" aria-describedby="privacy-note-hero">
+                            <form id="heroForm" class="space-y-4 text-navy-900"
+                                action="https://docs.google.com/forms/d/e/1FAIpQLSfikwTG6EUK0A4ZkV9ObQT8uO4SSaqE9zSh-iLRnf1eGZkw5g/formResponse"
+                                method="POST">
+
                                 <!-- Accessible labels (visually hidden) -->
                                 <label for="full-name-hero" class="sr-only">Full Name</label>
-                                <input id="full-name-hero" name="full_name" type="text" placeholder="Full Name*"
+                                <input id="full-name-hero" name="entry.751095666" type="text" placeholder="Full Name*"
                                     required
                                     class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
                                 <label for="email-hero" class="sr-only">Email Address</label>
-                                <input id="email-hero" name="email" type="email" placeholder="Email Address*" required
+                                <input id="email-hero" name="entry.954606011" type="email" placeholder="Email Address*"
+                                    required
                                     class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
                                 <label for="phone-hero" class="sr-only">Mobile Number</label>
-                                <input id="phone-hero" name="phone" type="tel" placeholder="Mobile Number*" required
+                                <input id="phone-hero" name="entry.1307352382" type="tel" placeholder="Mobile Number*"
+                                    required pattern="^[0-9]{10}$"
+                                    title="Enter a valid 10-digit mobile number (without country code)." maxlength="10"
                                     class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
-                                <label for="full-name-hero" class="sr-only">City</label>
-                                <input id="full-name-hero" name="city" type="text" placeholder="City*" required
+                                <label for="city-hero" class="sr-only">City</label>
+                                <input id="city-hero" name="entry.1783753412" type="text" placeholder="City*" required
+                                    pattern="^[A-Za-z\s]{2,50}$" title="City should only contain letters and spaces."
                                     class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
+
+                                <!-- Optional hidden field to track source -->
+                                <!-- <input type="hidden" name="entry.1783753412" value="Website Hero Form"> -->
 
                                 <button type="submit"
                                     class="w-full py-3 rounded-lg bg-navy-900 text-white font-semibold hover:opacity-90 transition">SUBMIT</button>
+
+                                <!-- Success message container -->
+                                <p class="successMsg hidden mt-3 text-sm font-semibold text-green-600">
+                                    ✅ Thank you! Your enquiry has been submitted.
+                                </p>
+
                             </form>
+                            <!-- Hidden iframe to prevent Google redirect -->
+                            <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe> -->
+
                         </div>
                     </div>
                 </div>
@@ -618,27 +637,44 @@
                     <h3 class="font-['Daloire'] text-2xl font-bold text-navy-900">Book A Site Visit</h3>
                     <p class="text-slate-500 mt-1 mb-5">Get exclusive access to luxury properties</p>
 
-                    <form class="space-y-4 text-navy-900" aria-describedby="privacy-note-bottom">
+                    <form id="footerForm" class="space-y-4 text-navy-900"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSfikwTG6EUK0A4ZkV9ObQT8uO4SSaqE9zSh-iLRnf1eGZkw5g/formResponse"
+                        method="POST">
+
+                        <!-- Accessible labels (visually hidden) -->
                         <label for="full-name-bottom" class="sr-only">Full Name</label>
-                        <input id="full-name-bottom" name="full_name" type="text" placeholder="Full Name*" required
+                        <input id="full-name-bottom" name="entry.751095666" type="text" placeholder="Full Name*"
+                            required
                             class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
                         <label for="email-bottom" class="sr-only">Email Address</label>
-                        <input id="email-bottom" name="email" type="email" placeholder="Email Address*" required
+                        <input id="email-bottom" name="entry.954606011" type="email" placeholder="Email Address*"
+                            required
                             class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
                         <label for="phone-bottom" class="sr-only">Mobile Number</label>
-                        <input id="phone-bottom" name="phone" type="tel" placeholder="Mobile Number*" required
-                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
-                        <label for="full-name-hero" class="sr-only">City</label>
-                        <input id="full-name-hero" name="city" type="text" placeholder="City*" required
+                        <input id="phone-bottom" name="entry.1307352382" type="tel" placeholder="Mobile Number*"
+                            required title="Enter a valid 10-digit mobile number (without country code)." maxlength="10"
                             class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
+                        <label for="city-bottom" class="sr-only">City</label>
+                        <input id="city-bottom" name="entry.1783753412" type="text" placeholder="City*" required
+                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
+
+                        <!-- Optional hidden field to track source -->
+                        <!-- <input type="hidden" name="entry.1783753412" value="Website Hero Form"> -->
+
                         <button type="submit"
-                            class="w-full py-3 rounded-lg bg-navy-900 text-white font-semibold hover:opacity-90 transition">
-                            SUBMIT
-                        </button>
+                            class="w-full py-3 rounded-lg bg-navy-900 text-white font-semibold hover:opacity-90 transition">SUBMIT</button>
+
+                        <!-- Success message container -->
+                        <p class="successMsg hidden mt-3 text-sm font-semibold text-green-600">
+                            ✅ Thank you! Your enquiry has been submitted.
+                        </p>
+
                     </form>
+                    <!-- Hidden iframe to prevent Google redirect -->
+                    <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe> -->
                 </div>
 
                 <!-- Footer-like quick links inside section -->
@@ -742,29 +778,45 @@
                 <h3 class="font-['Daloire'] text-2xl font-bold text-navy-900">Enquire Now</h3>
                 <p class="text-slate-500 mt-1 mb-5">Get exclusive access to luxury properties</p>
 
-                <form class="space-y-4 text-navy-900" aria-describedby="privacy-note-hero">
+                <form id="enquiryFormModal" class="space-y-4 text-navy-900"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSfikwTG6EUK0A4ZkV9ObQT8uO4SSaqE9zSh-iLRnf1eGZkw5g/formResponse"
+                    method="POST">
+
                     <!-- Accessible labels (visually hidden) -->
-                    <label for="full-name-hero" class="sr-only">Full Name</label>
-                    <input id="full-name-hero" name="full_name" type="text" placeholder="Full Name*" required
+                    <label for="full-name-modal" class="sr-only">Full Name</label>
+                    <input id="full-name-modal" name="entry.751095666" type="text" placeholder="Full Name*" required
                         class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
-                    <label for="email-hero" class="sr-only">Email Address</label>
-                    <input id="email-hero" name="email" type="email" placeholder="Email Address*" required
+                    <label for="email-modal" class="sr-only">Email Address</label>
+                    <input id="email-modal" name="entry.954606011" type="email" placeholder="Email Address*" required
                         class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
-                    <label for="phone-hero" class="sr-only">Mobile Number</label>
-                    <input id="phone-hero" name="phone" type="tel" placeholder="Mobile Number*" required
+                    <label for="phone-modal" class="sr-only">Mobile Number</label>
+                    <input id="phone-modal" name="entry.1307352382" type="tel" placeholder="Mobile Number*" required
+                        title="Enter a valid 10-digit mobile number (without country code)." maxlength="10"
                         class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
-                    <label for="full-name-hero" class="sr-only">City</label>
-                    <input id="full-name-hero" name="city" type="text" placeholder="City*" required
+                    <label for="city-modal" class="sr-only">City</label>
+                    <input id="city-modal" name="entry.1783753412" type="text" placeholder="City*" required
                         class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
+
+                    <!-- Optional hidden field to track source -->
+                    <!-- <input type="hidden" name="entry.1783753412" value="Website Hero Form"> -->
 
                     <button type="submit"
                         class="w-full py-3 rounded-lg bg-navy-900 text-white font-semibold hover:opacity-90 transition">SUBMIT</button>
+
+                    <!-- Success message container -->
+                    <p class="successMsg hidden mt-3 text-sm font-semibold text-green-600">
+                        ✅ Thank you! Your enquiry has been submitted.
+                    </p>
+
                 </form>
+                <!-- Hidden iframe to prevent Google redirect -->
+                <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe> -->
             </div>
         </div>
+
     </div>
 
     <!-- Desktop sticky enquire button -->
@@ -787,6 +839,43 @@
                 <i class="bi bi-chat-dots"></i>
                 Enquire Now
             </button>
+        </div>
+    </div>
+
+    <!-- Confirmation Dialog -->
+    <div id="unsavedConfirm" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full p-6 text-center">
+            <h3 class="text-lg font-semibold text-navy-900">Discard your enquiry?</h3>
+            <p class="mt-2 text-sm text-slate-600">
+                You have started filling the form and haven’t submitted yet.
+                Closing now will discard your details.
+            </p>
+            <div class="mt-6 flex justify-center gap-4">
+                <button id="discardBtn"
+                    class="px-4 py-2 rounded-lg bg-red-600 text-white font-medium hover:bg-red-700 transition">
+                    Discard
+                </button>
+                <button id="keepEditingBtn"
+                    class="px-4 py-2 rounded-lg border border-slate-300 text-slate-700 font-medium hover:bg-slate-100 transition">
+                    Keep Editing
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Confirmation Dialog -->
+    <div id="successConfirm" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full p-6 text-center">
+            <h3 class="text-lg font-semibold text-navy-900">🎉 Enquiry Submitted</h3>
+            <p class="mt-2 text-sm text-slate-600">
+                Thank you! Your enquiry has been submitted successfully.
+            </p>
+            <div class="mt-6 flex justify-center">
+                <button id="successOkBtn"
+                    class="px-4 py-2 rounded-lg bg-navy-900 text-white font-medium hover:opacity-90 transition">
+                    OK
+                </button>
+            </div>
         </div>
     </div>
 
@@ -844,36 +933,200 @@
     </script>
 
     <script>
-        // Utility: open/close modal
-        const enquireModal = document.getElementById('enquireModal');
-        const enquireClose = document.getElementById('enquireClose');
-        const enquireBackdrop = document.getElementById('enquireBackdrop');
-        const enquireStickyBtn = document.getElementById('enquireStickyBtn');
-        const enquireMobileBtn = document.getElementById('enquireMobileBtn');
-        const bookNowBtn = document.getElementById('bookNowBtn');
+        document.addEventListener("DOMContentLoaded", function () {
+            /* ---------------------------
+               FORM SUBMISSION + VALIDATION
+            ---------------------------- */
+            document.querySelectorAll("form").forEach(form => {
+                form.addEventListener("submit", e => {
+                    e.preventDefault();
 
-        function openEnquire() {
-            enquireModal.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden'); // lock scroll
-        }
-        function closeEnquire() {
-            enquireModal.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden');
-        }
+                    const nameInput = form.querySelector("input[name='entry.751095666']");
+                    const emailInput = form.querySelector("input[name='entry.954606011']");
+                    const phoneInput = form.querySelector("input[name='entry.1307352382']");
+                    const cityInput = form.querySelector("input[name='entry.1783753412']");
+                    const msg = form.querySelector(".successMsg");
 
-        // Open from sticky and mobile buttons
-        if (enquireStickyBtn) enquireStickyBtn.addEventListener('click', (e) => { e.preventDefault(); openEnquire(); });
-        if (enquireMobileBtn) enquireMobileBtn.addEventListener('click', (e) => { e.preventDefault(); openEnquire(); });
-        if (bookNowBtn) bookNowBtn.addEventListener('click', (e) => { e.preventDefault(); openEnquire(); });
+                    // Reset styles/messages
+                    [nameInput, emailInput, phoneInput, cityInput].forEach(input => {
+                        if (input) input.classList.remove("border-red-500", "focus:ring-red-500");
+                    });
+                    if (msg) {
+                        msg.classList.add("hidden");
+                        msg.classList.remove("text-green-600", "text-red-600");
+                    }
 
-        // Close modal: icon, backdrop click, Esc key
-        if (enquireClose) enquireClose.addEventListener('click', closeEnquire);
-        if (enquireBackdrop) enquireBackdrop.addEventListener('click', closeEnquire);
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeEnquire(); });
+                    // Regex rules
+                    const nameRegex = /^[A-Za-z\s]{2,50}$/;
+                    const phoneRegex = /^[0-9]{10}$/;
+                    const cityRegex = /^[A-Za-z\s]{2,50}$/;
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => {
-                openEnquire();
+                    let hasError = false;
+                    let errorText = "";
+
+                    if (!nameRegex.test(nameInput.value.trim())) {
+                        nameInput.classList.add("border-red-500", "focus:ring-red-500");
+                        errorText = "❌ Please enter a valid name (letters and spaces only, 2–50 characters).";
+                        hasError = true;
+                    } else if (!emailRegex.test(emailInput.value.trim())) {
+                        emailInput.classList.add("border-red-500", "focus:ring-red-500");
+                        errorText = "❌ Please enter a valid email address.";
+                        hasError = true;
+                    } else if (!phoneRegex.test(phoneInput.value.trim())) {
+                        phoneInput.classList.add("border-red-500", "focus:ring-red-500");
+                        errorText = "❌ Please enter a valid 10-digit mobile number (without country code).";
+                        hasError = true;
+                    } else if (!cityRegex.test(cityInput.value.trim())) {
+                        cityInput.classList.add("border-red-500", "focus:ring-red-500");
+                        errorText = "❌ Please enter a valid city name (letters and spaces only).";
+                        hasError = true;
+                    }
+
+                    if (hasError) {
+                        if (msg) {
+                            msg.textContent = errorText;
+                            msg.classList.remove("hidden");
+                            msg.classList.add("text-red-600");
+                        }
+                        return;
+                    }
+
+                    // Submit via fetch
+                    const data = new FormData(form);
+                    fetch(form.action, { method: "POST", body: data, mode: "no-cors" })
+                        .then(() => {
+                            // If this is the modal form, handle differently
+                            if (form.id === "enquiryFormModal") {
+                                modalFormDirty = false;
+                                modalFormSubmitted = true;
+                                form.reset();
+                                reallyCloseEnquire();
+                                const successConfirm = document.getElementById("successConfirm");
+                                if (successConfirm) successConfirm.classList.remove("hidden");
+                            } else {
+                                if (msg) {
+                                    msg.textContent = "✅ Thank you! Your enquiry has been submitted.";
+                                    msg.classList.remove("hidden");
+                                    msg.classList.add("text-green-600");
+                                }
+                                form.reset();
+                            }
+                        })
+                        .catch(err => {
+                            console.error("Error submitting form", err);
+                            if (msg) {
+                                msg.textContent = "❌ Something went wrong. Please try again.";
+                                msg.classList.remove("hidden");
+                                msg.classList.add("text-red-600");
+                            }
+                        });
+                });
+            });
+
+            /* ---------------------------
+               MODAL AUTO-OPEN + SAFE CLOSE
+            ---------------------------- */
+            const enquireModal = document.getElementById('enquireModal');
+            const enquireClose = document.getElementById('enquireClose');
+            const enquireBackdrop = document.getElementById('enquireBackdrop');
+            const enquireStickyBtn = document.getElementById('enquireStickyBtn');
+            const enquireMobileBtn = document.getElementById('enquireMobileBtn');
+            const bookNowBtn = document.getElementById('bookNowBtn');
+
+            const heroForm = document.getElementById('heroForm');
+            const footerForm = document.getElementById('footerForm');
+            const modalForm = document.getElementById('enquiryFormModal');
+
+            const unsavedConfirm = document.getElementById("unsavedConfirm");
+            const discardBtn = document.getElementById("discardBtn");
+            const keepEditingBtn = document.getElementById("keepEditingBtn");
+            const successConfirm = document.getElementById("successConfirm");
+            const successOkBtn = document.getElementById("successOkBtn");
+
+            let modalTimer;
+            let modalShouldOpen = true;
+            let modalFormDirty = false;
+            let modalFormSubmitted = false;
+
+            function openEnquire() {
+                enquireModal.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+            }
+            function reallyCloseEnquire() {
+                enquireModal.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+                modalFormDirty = false;
+                modalFormSubmitted = false;
+                if (modalForm) modalForm.reset();
+            }
+            function attemptCloseEnquire() {
+                const isModalOpen = !enquireModal.classList.contains("hidden");
+                if (isModalOpen && modalFormDirty && !modalFormSubmitted) {
+                    unsavedConfirm.classList.remove("hidden");
+                    return;
+                }
+                reallyCloseEnquire();
+            }
+
+            // Confirmation actions
+            if (discardBtn) {
+                discardBtn.addEventListener("click", () => {
+                    unsavedConfirm.classList.add("hidden");
+                    reallyCloseEnquire();
+                });
+            }
+            if (keepEditingBtn) {
+                keepEditingBtn.addEventListener("click", () => {
+                    unsavedConfirm.classList.add("hidden");
+                });
+            }
+            if (successOkBtn) {
+                successOkBtn.addEventListener("click", () => {
+                    successConfirm.classList.add("hidden");
+                });
+            }
+
+            // Open from sticky/mobile/book buttons
+            if (enquireStickyBtn) enquireStickyBtn.addEventListener('click', e => { e.preventDefault(); openEnquire(); });
+            if (enquireMobileBtn) enquireMobileBtn.addEventListener('click', e => { e.preventDefault(); openEnquire(); });
+            if (bookNowBtn) bookNowBtn.addEventListener('click', e => { e.preventDefault(); openEnquire(); });
+
+            // Close modal: icon, backdrop, Esc
+            if (enquireClose) enquireClose.addEventListener('click', attemptCloseEnquire);
+            if (enquireBackdrop) enquireBackdrop.addEventListener('click', attemptCloseEnquire);
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') attemptCloseEnquire(); });
+
+            // Cancel auto-popup if user interacts with hero/footer forms
+            function cancelAutoPopup() {
+                modalShouldOpen = false;
+                if (modalTimer) clearTimeout(modalTimer);
+            }
+            [heroForm, footerForm].forEach(form => {
+                if (form) {
+                    form.querySelectorAll("input, textarea, select").forEach(input => {
+                        input.addEventListener("focus", cancelAutoPopup, { once: true });
+                        input.addEventListener("input", cancelAutoPopup, { once: true });
+                    });
+                }
+            });
+
+            // Track if modal form is dirty
+            if (modalForm) {
+                modalForm.querySelectorAll("input, textarea, select").forEach(input => {
+                    input.addEventListener("input", () => {
+                        modalFormDirty = Array.from(modalForm.elements).some(el => (el.value || "").trim() !== "");
+                    });
+                });
+            }
+
+            // Auto-open after 5s if allowed
+            modalTimer = setTimeout(() => {
+                if (!modalShouldOpen) return;
+                const activeEl = document.activeElement;
+                const userInModal = modalForm && modalForm.contains(activeEl);
+                const alreadyOpen = enquireModal && !enquireModal.classList.contains("hidden");
+                if (!userInModal && !alreadyOpen) openEnquire();
             }, 5000);
         });
     </script>
