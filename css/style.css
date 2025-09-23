@@ -4,7 +4,7 @@ html {
 
         @font-face {
             font-family: 'Daloire';
-            src: url('/assets/fonts/deloire-modern-luxury-sans-2023-11-27-05-02-57-utc/Deloire-Medium.ttf') format('truetype');
+            src: url('../assets/fonts/deloire-modern-luxury-sans-2023-11-27-05-02-57-utc/Deloire-Medium.ttf') format('truetype');
             font-weight: 500;
             /* Medium */
             font-style: normal;
@@ -12,7 +12,7 @@ html {
 
         @font-face {
             font-family: 'Daloire';
-            src: url('/assets/fonts/deloire-modern-luxury-sans-2023-11-27-05-02-57-utc/Deloire-Bold.ttf') format('truetype');
+            src: url('../assets/fonts/deloire-modern-luxury-sans-2023-11-27-05-02-57-utc/Deloire-Bold.ttf') format('truetype');
             font-weight: 700;
             /* Bold */
             font-style: normal;
@@ -20,7 +20,7 @@ html {
 
         @font-face {
             font-family: 'Belgan';
-            src: url('/assets/fonts/Belgan-Aesthetic.ttf') format('truetype');
+            src: url('../assets/fonts/Belgan-Aesthetic.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -62,7 +62,7 @@ html {
             inset: 0;
             background:
                 linear-gradient(135deg, rgba(9, 14, 26, 0.52), rgba(18, 27, 48, 0.36)),
-                url('/assets/img/sea-link.jpg') center/cover no-repeat;
+                url('../assets/img/sea-link.jpg') center/cover no-repeat;
         }
 
         .mouse-cue {
