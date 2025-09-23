@@ -23,6 +23,9 @@
     <!-- AOS (Animate On Scroll) -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- Tailwind via CDN with custom config -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -57,191 +60,6 @@
         }
     </script>
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        @font-face {
-            font-family: 'Daloire';
-            src: url('assets/fonts/deloire-modern-luxury-sans-2023-11-27-05-02-57-utc/Deloire-Medium.ttf') format('truetype');
-            font-weight: 500;
-            /* Medium */
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Daloire';
-            src: url('assets/fonts/deloire-modern-luxury-sans-2023-11-27-05-02-57-utc/Deloire-Bold.ttf') format('truetype');
-            font-weight: 700;
-            /* Bold */
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Belgan';
-            src: url('assets/fonts/Belgan-Aesthetic.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        p,
-        div,
-        span,
-        li,
-        input {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-
-        .text-gradient {
-            background: linear-gradient(90deg, #e7c04b, #f7e3a2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .lux-divider {
-            width: 96px;
-            height: 4px;
-            border-radius: 999px;
-            background: linear-gradient(90deg, #e7c04b, #f7e3a2);
-        }
-
-        .gold-button {
-            background: linear-gradient(90deg, #e7c04b, #f7e3a2);
-            color: #111;
-        }
-
-        .gold-button:hover {
-            filter: brightness(0.95);
-            box-shadow: 0 10px 22px -10px rgba(231, 192, 75, 0.6);
-        }
-
-        .hero-overlay {
-            position: absolute;
-            inset: 0;
-            background:
-                linear-gradient(135deg, rgba(9, 14, 26, 0.52), rgba(18, 27, 48, 0.36)),
-                url('assets/img/sea-link.jpg') center/cover no-repeat;
-        }
-
-        .mouse-cue {
-            width: 26px;
-            height: 44px;
-            border-radius: 16px;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        .mouse-cue .dot {
-            width: 4px;
-            height: 12px;
-            background: #e7c04b;
-            border-radius: 999px;
-            margin-top: 6px;
-            animation: scrollDot 1.8s infinite ease-in-out;
-        }
-
-        .brand-logo {
-            height: 40px;
-            /* mobile */
-            max-width: 220px;
-            width: auto;
-            object-fit: contain;
-            display: block;
-        }
-
-        @media (min-width: 1024px) {
-            .brand-logo {
-                height: 40px;
-            }
-
-            /* desktop */
-        }
-
-
-        @keyframes scrollDot {
-            0% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-
-            50% {
-                transform: translateY(8px);
-                opacity: .7;
-            }
-
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .menu-open .menu-icon span:nth-child(1) {
-            transform: rotate(45deg) translateY(5px) translateX(5px);
-        }
-
-        .menu-open .menu-icon span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .menu-open .menu-icon span:nth-child(3) {
-            transform: rotate(-45deg) translateY(-6px) translateX(6px);
-        }
-    </style>
-    <style>
-        /* Modal backdrop and panel */
-        .enquire-backdrop {
-            position: fixed;
-            inset: 0;
-            z-index: 50;
-            background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(4px);
-        }
-
-        .enquire-panel {
-            background: #fff;
-            border-radius: 18px;
-            box-shadow: 0 25px 50px -12px rgba(9, 14, 26, 0.25);
-        }
-
-        /* Sticky enquire button (desktop) */
-        .sticky-enquire {
-            position: fixed;
-            z-index: 40;
-            right: 1.25rem;
-            bottom: 1.25rem;
-        }
-
-        /* Mobile bottom action strip */
-        .mobile-action-strip {
-            position: fixed;
-            inset-x: 0;
-            bottom: 0;
-            z-index: 40;
-            background: rgba(11, 18, 34, 0.92);
-            backdrop-filter: blur(8px);
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        @media (max-width: 767px) {
-            body {
-                padding-bottom: 70px;
-            }
-
-            /* height of your strip */
-        }
-
-        .mobile-action-strip {
-            z-index: 40;
-        }
-
-        .enquire-backdrop {
-            z-index: 50;
-        }
-    </style>
 </head>
 
 <body class="font-sans text-slate-900 bg-white">
@@ -251,7 +69,7 @@
             <div class="flex items-center justify-between h-20">
                 <!-- Brand -->
                 <a href="#hero" class="flex items-center gap-2" aria-label="Hubtown 25 Residences">
-                    <img src="/hubtown.png" alt="Hubtown 25 Residences logo"
+                    <img src="hubtown.png" alt="Hubtown 25 Residences logo"
                         class="block h-8 md:h-14 w-auto max-w-[200px] object-contain select-none" loading="eager"
                         decoding="async" />
                 </a>
@@ -267,7 +85,7 @@
                     <a href="#why-hubtown" class="text-sm text-white/90 hover:text-gold-500 transition">Contact</a>
                     <a id="bookNowBtn" href="javascript:void(0);"
                         class="ml-2 text-white/90 hover:text-gold-500 transition inline-flex items-center px-4 py-2 rounded-lg border border-white/30 text-sm hover:bg-white/10 transition">
-                        Enquire Now
+                        Book Now
                     </a>
                 </div>
 
@@ -363,28 +181,61 @@
                             <h3 class="font-['Daloire'] text-2xl font-bold text-navy-900">Book A Site Visit</h3>
                             <p class="text-slate-500 mt-1 mb-5">Get exclusive access to luxury properties</p>
 
-                            <form class="space-y-4 text-navy-900" aria-describedby="privacy-note-hero">
+                            <form id="heroForm" class="space-y-4 text-navy-900"
+                                action="https://docs.google.com/forms/d/e/1FAIpQLSfikwTG6EUK0A4ZkV9ObQT8uO4SSaqE9zSh-iLRnf1eGZkw5g/formResponse"
+                                method="POST">
+
                                 <!-- Accessible labels (visually hidden) -->
                                 <label for="full-name-hero" class="sr-only">Full Name</label>
-                                <input id="full-name-hero" name="full_name" type="text" placeholder="Full Name*"
+                                <input id="full-name-hero" name="entry.751095666" type="text" placeholder="Full Name*"
                                     required
                                     class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
                                 <label for="email-hero" class="sr-only">Email Address</label>
-                                <input id="email-hero" name="email" type="email" placeholder="Email Address*" required
+                                <input id="email-hero" name="entry.954606011" type="email" placeholder="Email Address*"
+                                    required
                                     class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
                                 <label for="phone-hero" class="sr-only">Mobile Number</label>
-                                <input id="phone-hero" name="phone" type="tel" placeholder="Mobile Number*" required
+                                <input id="phone-hero" name="entry.1307352382" type="tel" placeholder="Mobile Number*"
+                                    required pattern="^[0-9]{10}$"
+                                    title="Enter a valid 10-digit mobile number (without country code)." maxlength="10"
                                     class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
-                                <label for="full-name-hero" class="sr-only">City</label>
-                                <input id="full-name-hero" name="city" type="text" placeholder="City*" required
+                                <label for="city-hero" class="sr-only">City</label>
+                                <input id="city-hero" name="entry.1783753412" type="text" placeholder="City*" required
+                                    pattern="^[A-Za-z\s]{2,50}$" title="City should only contain letters and spaces."
                                     class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
+
+                                <label for="configuration" class="sr-only">Configuration</label>
+                                <select id="configuration" name="entry.1069655918"
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400"
+                                    required>
+                                    <option class="text-slate-500" value="">Select Configuration</option>
+                                    <option value="2 BHK">2 BHK</option>
+                                    <option value="3 BHK">3 BHK</option>
+                                    <option value="4 BHK">4 BHK</option>
+                                    <option value="5 BHK">5 BHK</option>
+                                    <option value="Jodi options">Jodi options</option>
+                                    <option value="Duplex">Duplex</option>
+                                    <option value="Pent House">Pent House</option>
+                                    <option value="Customised">Customised</option>
+                                </select>
+                                <!-- Optional hidden field to track source -->
+                                <!-- <input type="hidden" name="entry.1783753412" value="Website Hero Form"> -->
 
                                 <button type="submit"
                                     class="w-full py-3 rounded-lg bg-navy-900 text-white font-semibold hover:opacity-90 transition">SUBMIT</button>
+
+                                <!-- Success message container -->
+                                <p class="successMsg hidden mt-3 text-sm font-semibold text-green-600">
+                                    ✅ Thank you! Your enquiry has been submitted.
+                                </p>
+
                             </form>
+                            <!-- Hidden iframe to prevent Google redirect -->
+                            <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe> -->
+
                         </div>
                     </div>
                 </div>
@@ -445,7 +296,7 @@
                                 </div>
                                 <div>
                                     <div class="text-2xl font-bold text-navy-900"><span class="counter"
-                                            data-target="2500"></span>+
+                                            data-target="25000"></span>+
                                     </div>
                                     <div class="text-sm text-slate-500">Families</div>
                                 </div>
@@ -460,59 +311,71 @@
     <!-- Trending Properties -->
     <section id="properties" class="py-16 lg:py-24 bg-[#f7f8fb]">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="900">
-                <p class="uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">Trending Hubtown Properties
+            <div class="text-center max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="900">
+                <p class="hidden uppercase tracking-[0.12em] text-[0.9rem] text-gold-400/90 mb-2">Trending Hubtown
+                    Properties
                 </p>
-                <h2 class="font-['Daloire'] text-4xl font-bold text-navy-900">Handpicked Luxury Listings</h2>
-                <div class="lux-divider mx-auto my-4"></div>
-                <p class="text-lg text-slate-600">Explore our curated selection of Mumbai’s finest properties across
-                    iconic neighborhoods.</p>
+                <h2 class="font-['Daloire'] text-3xl md:text-4xl font-bold text-navy-900">Explore a wide range of
+                    residences</h2>
+                <!-- <div class="lux-divider mx-auto my-4"></div> -->
             </div>
 
             <!-- 6 property cards -->
-            <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Property Showcase -->
+            <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-14">
+
                 <!-- 1 -->
-                <div class="bg-white rounded-2xl shadow-soft overflow-hidden group" data-aos="fade-up">
-                    <div class="relative">
-                        <img src="assets/img/Celeste-SS.png" alt="Hubtown Celeste"
-                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105" />
-                        <span
-                            class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900 hidden">Celeste</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Hubtown Celeste</h3>
-                        <p class="text-slate-500 text-sm mb-4">Off Worli Sea Face</p>
-                        <div class="flex justify-between items-center border-t pt-4">
-                            <span class="text-sm font-semibold text-navy-900">Spacious 2 and 3 BHK</span>
-                            <a href="#" class="text-gold-500 font-semibold text-sm hover:underline">View Details →</a>
-                        </div>
+                <div class="relative rounded-2xl overflow-hidden group cursor-pointer" data-aos="fade-up">
+                    <img src="assets/img/1.png" alt="Smartly Designed Home"
+                        class="w-full h-[220px] object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105" />
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                        <h3 class="font-['Daloire'] text-xl md:text-2xl text-white text-center">
+                            Smartly Designed<br>Homes
+                        </h3>
                     </div>
                 </div>
+
                 <!-- 2 -->
-                <div class="bg-white rounded-2xl shadow-soft overflow-hidden group" data-aos="fade-up"
-                    data-aos-delay="75">
-                    <div class="relative">
-                        <img src="assets/img/rising-ss.jpg" alt="Hubtown Rising City"
-                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105" />
-                        <span
-                            class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-gold-500 text-navy-900 hidden">Rising
-                            City</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Hubtown Rising City</h3>
-                        <p class="text-slate-500 text-sm mb-4">Ghatkopar</p>
-                        <div class="flex justify-between items-center border-t pt-4">
-                            <span class="text-sm font-semibold text-navy-900">Exclusive 1, 2 & 3 Bed Homes</span>
-                            <a href="#" class="text-gold-500 font-semibold text-sm hover:underline">View Details →</a>
-                        </div>
+                <div class="relative rounded-2xl overflow-hidden group cursor-pointer" data-aos="fade-up" data-aos-delay="50">
+                    <img src="assets/img/2.png" alt="Premium Homes"
+                        class="w-full h-[220px] object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105" />
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                        <h3 class="font-['Daloire'] text-xl md:text-2xl text-white text-center">
+                            Premium Homes<br>
+                        </h3>
                     </div>
                 </div>
+
+                <!-- 3 -->
+                <div class="relative rounded-2xl overflow-hidden group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/img/3.png" alt="Uber-Luxury  Bespoke Homes"
+                        class="w-full h-[220px] object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105" />
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                        <h3 class="font-['Daloire'] text-xl md:text-2xl text-white text-center">
+                            Uber-Luxury<br>Bespoke Homes<br>
+                        </h3>
+                    </div>
+                </div>
+
+
             </div>
+
+            <div class="text-center max-w-4xl mx-auto py-8 lg:py-12" data-aos="fade-up" data-aos-duration="900">
+                <!-- <div class="lux-divider mx-auto my-4"></div> -->
+                <h4 class="font-['Daloire'] text-xl md:text-2xl font-bold text-navy-900">Explore our curated selection
+                    of Mumbai’s finest properties across
+                    iconic neighborhoods.</h4>
+            </div>
+
+
             <!-- CTA -->
-            <div class="pt-10 lg:pt-12 text-center" data-aos="zoom-in" data-aos-delay="150">
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="150">
                 <a href="#contact"
-                    class="gold-button inline-flex items-center justify-center px-7 py-3 rounded-lg font-semibold">Ready
-                    to Make Mumbai Your Home? Contact Us Today!</a>
+                    class="gold-button inline-flex items-center justify-center px-7 py-3 rounded-lg font-semibold">Reserve
+                    Your Seat Now. Exclusive NRI Offers Await</a>
             </div>
         </div>
     </section>
@@ -527,41 +390,41 @@
             </div>
 
             <div class="mt-10 grid md:grid-cols-3 gap-6">
-                <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
+                <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-2 transition-transform duration-300 ease-in-out cursor-pointer"
                     data-aos="fade-up">
                     <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-cash-coin"></i></div>
                     <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Strong Rental Yields</h3>
                     <p class="text-slate-600 mt-2">Prime micro-markets deliver 6–8% gross rent.</p>
                 </div>
-                <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
+                <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-2 transition-transform duration-300 ease-in-out cursor-pointer"
                     data-aos="fade-up" data-aos-delay="75">
                     <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-bank"></i></div>
                     <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Financial Capital of India</h3>
                     <p class="text-slate-600 mt-2">Home to BSE, NSE, major banks, Fortune 500 companies — ensuring
                         steady housing demand.</p>
                 </div>
-                <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
+                <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-2 transition-transform duration-300 ease-in-out cursor-pointer"
                     data-aos="fade-up" data-aos-delay="150">
                     <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-building"></i></div>
                     <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Infrastructure Boom</h3>
                     <p class="text-slate-600 mt-2">Mumbai Metro, Coastal Road, MTHL, and Navi Mumbai Airport are
                         transforming connectivity.</p>
                 </div>
-                <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
+                <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-2 transition-transform duration-300 ease-in-out cursor-pointer"
                     data-aos="fade-up" data-aos-delay="75">
                     <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-people"></i></div>
                     <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Diverse Buyer Demand</h3>
                     <p class="text-slate-600 mt-2">High population density and migration ensure consistent demand for
                         every segment.</p>
                 </div>
-                <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
+                <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-2 transition-transform duration-300 ease-in-out cursor-pointer"
                     data-aos="fade-up" data-aos-delay="150">
                     <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-map"></i></div>
                     <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Limited Land Supply</h3>
                     <p class="text-slate-600 mt-2">Scarcity of developable land keeps property values appreciating
                         steadily over time.</p>
                 </div>
-                <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-1 transition"
+                <div class="bg-white border border-slate-100 rounded-2xl shadow-soft p-6 hover:-translate-y-2 transition-transform duration-300 ease-in-out cursor-pointer"
                     data-aos="fade-up">
                     <div class="text-gold-500 text-3xl mb-3"><i class="bi bi-globe"></i></div>
                     <h3 class="font-['Daloire'] text-xl font-bold text-navy-900">Global City Appeal</h3>
@@ -618,27 +481,58 @@
                     <h3 class="font-['Daloire'] text-2xl font-bold text-navy-900">Book A Site Visit</h3>
                     <p class="text-slate-500 mt-1 mb-5">Get exclusive access to luxury properties</p>
 
-                    <form class="space-y-4 text-navy-900" aria-describedby="privacy-note-bottom">
+                    <form id="footerForm" class="space-y-4 text-navy-900"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSfikwTG6EUK0A4ZkV9ObQT8uO4SSaqE9zSh-iLRnf1eGZkw5g/formResponse"
+                        method="POST">
+
+                        <!-- Accessible labels (visually hidden) -->
                         <label for="full-name-bottom" class="sr-only">Full Name</label>
-                        <input id="full-name-bottom" name="full_name" type="text" placeholder="Full Name*" required
+                        <input id="full-name-bottom" name="entry.751095666" type="text" placeholder="Full Name*"
+                            required
                             class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
                         <label for="email-bottom" class="sr-only">Email Address</label>
-                        <input id="email-bottom" name="email" type="email" placeholder="Email Address*" required
+                        <input id="email-bottom" name="entry.954606011" type="email" placeholder="Email Address*"
+                            required
                             class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
                         <label for="phone-bottom" class="sr-only">Mobile Number</label>
-                        <input id="phone-bottom" name="phone" type="tel" placeholder="Mobile Number*" required
-                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
-                        <label for="full-name-hero" class="sr-only">City</label>
-                        <input id="full-name-hero" name="city" type="text" placeholder="City*" required
+                        <input id="phone-bottom" name="entry.1307352382" type="tel" placeholder="Mobile Number*"
+                            required title="Enter a valid 10-digit mobile number (without country code)." maxlength="10"
                             class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
+                        <label for="city-bottom" class="sr-only">City</label>
+                        <input id="city-bottom" name="entry.1783753412" type="text" placeholder="City*" required
+                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
+
+                        <label for="configuration-bottom" class="sr-only">Configuration</label>
+                        <select id="configuration-bottom" name="entry.1069655918"
+                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400"
+                            required>
+                            <option class="text-slate-500" value="">Select Configuration</option>
+                            <option value="2 BHK">2 BHK</option>
+                            <option value="3 BHK">3 BHK</option>
+                            <option value="4 BHK">4 BHK</option>
+                            <option value="5 BHK">5 BHK</option>
+                            <option value="Jodi options">Jodi options</option>
+                            <option value="Duplex">Duplex</option>
+                            <option value="Pent House">Pent House</option>
+                            <option value="Customised">Customised</option>
+                        </select>
+                        <!-- Optional hidden field to track source -->
+                        <!-- <input type="hidden" name="entry.1783753412" value="Website Hero Form"> -->
+
                         <button type="submit"
-                            class="w-full py-3 rounded-lg bg-navy-900 text-white font-semibold hover:opacity-90 transition">
-                            SUBMIT
-                        </button>
+                            class="w-full py-3 rounded-lg bg-navy-900 text-white font-semibold hover:opacity-90 transition">SUBMIT</button>
+
+                        <!-- Success message container -->
+                        <p class="successMsg hidden mt-3 text-sm font-semibold text-green-600">
+                            ✅ Thank you! Your enquiry has been submitted.
+                        </p>
+
                     </form>
+                    <!-- Hidden iframe to prevent Google redirect -->
+                    <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe> -->
                 </div>
 
                 <!-- Footer-like quick links inside section -->
@@ -742,29 +636,59 @@
                 <h3 class="font-['Daloire'] text-2xl font-bold text-navy-900">Enquire Now</h3>
                 <p class="text-slate-500 mt-1 mb-5">Get exclusive access to luxury properties</p>
 
-                <form class="space-y-4 text-navy-900" aria-describedby="privacy-note-hero">
+                <form id="enquiryFormModal" class="space-y-4 text-navy-900"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSfikwTG6EUK0A4ZkV9ObQT8uO4SSaqE9zSh-iLRnf1eGZkw5g/formResponse"
+                    method="POST">
+
                     <!-- Accessible labels (visually hidden) -->
-                    <label for="full-name-hero" class="sr-only">Full Name</label>
-                    <input id="full-name-hero" name="full_name" type="text" placeholder="Full Name*" required
+                    <label for="full-name-modal" class="sr-only">Full Name</label>
+                    <input id="full-name-modal" name="entry.751095666" type="text" placeholder="Full Name*" required
                         class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
-                    <label for="email-hero" class="sr-only">Email Address</label>
-                    <input id="email-hero" name="email" type="email" placeholder="Email Address*" required
+                    <label for="email-modal" class="sr-only">Email Address</label>
+                    <input id="email-modal" name="entry.954606011" type="email" placeholder="Email Address*" required
                         class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
-                    <label for="phone-hero" class="sr-only">Mobile Number</label>
-                    <input id="phone-hero" name="phone" type="tel" placeholder="Mobile Number*" required
+                    <label for="phone-modal" class="sr-only">Mobile Number</label>
+                    <input id="phone-modal" name="entry.1307352382" type="tel" placeholder="Mobile Number*" required
+                        title="Enter a valid 10-digit mobile number (without country code)." maxlength="10"
                         class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
 
-                    <label for="full-name-hero" class="sr-only">City</label>
-                    <input id="full-name-hero" name="city" type="text" placeholder="City*" required
+                    <label for="city-modal" class="sr-only">City</label>
+                    <input id="city-modal" name="entry.1783753412" type="text" placeholder="City*" required
                         class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400" />
+
+                    <label for="configuration-modal" class="sr-only">Configuration</label>
+                    <select id="configuration-modal" name="entry.1069655918"
+                        class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-gold-400"
+                        required>
+                        <option class="text-slate-500" value="">Select Configuration</option>
+                        <option value="2 BHK">2 BHK</option>
+                        <option value="3 BHK">3 BHK</option>
+                        <option value="4 BHK">4 BHK</option>
+                        <option value="5 BHK">5 BHK</option>
+                        <option value="Jodi options">Jodi options</option>
+                        <option value="Duplex">Duplex</option>
+                        <option value="Pent House">Pent House</option>
+                        <option value="Customised">Customised</option>
+                    </select>
+                    <!-- Optional hidden field to track source -->
+                    <!-- <input type="hidden" name="entry.1783753412" value="Website Hero Form"> -->
 
                     <button type="submit"
                         class="w-full py-3 rounded-lg bg-navy-900 text-white font-semibold hover:opacity-90 transition">SUBMIT</button>
+
+                    <!-- Success message container -->
+                    <p class="successMsg hidden mt-3 text-sm font-semibold text-green-600">
+                        ✅ Thank you! Your enquiry has been submitted.
+                    </p>
+
                 </form>
+                <!-- Hidden iframe to prevent Google redirect -->
+                <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe> -->
             </div>
         </div>
+
     </div>
 
     <!-- Desktop sticky enquire button -->
@@ -790,93 +714,47 @@
         </div>
     </div>
 
+    <!-- Confirmation Dialog -->
+    <div id="unsavedConfirm" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full p-6 text-center">
+            <h3 class="text-lg font-semibold text-navy-900">Discard your enquiry?</h3>
+            <p class="mt-2 text-sm text-slate-600">
+                You have started filling the form and haven’t submitted yet.
+                Closing now will discard your details.
+            </p>
+            <div class="mt-6 flex justify-center gap-4">
+                <button id="discardBtn"
+                    class="px-4 py-2 rounded-lg bg-red-600 text-white font-medium hover:bg-red-700 transition">
+                    Discard
+                </button>
+                <button id="keepEditingBtn"
+                    class="px-4 py-2 rounded-lg border border-slate-300 text-slate-700 font-medium hover:bg-slate-100 transition">
+                    Keep Editing
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Confirmation Dialog -->
+    <div id="successConfirm" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full p-6 text-center">
+            <h3 class="text-lg font-semibold text-navy-900">🎉 Enquiry Submitted</h3>
+            <p class="mt-2 text-sm text-slate-600">
+                Thank you! Your enquiry has been submitted successfully.
+            </p>
+            <div class="mt-6 flex justify-center">
+                <button id="successOkBtn"
+                    class="px-4 py-2 rounded-lg bg-navy-900 text-white font-medium hover:opacity-90 transition">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true, offset: 80, duration: 700, easing: 'ease-out-cubic' });
-    </script>
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener("click", function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute("href"));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 60, // adjust for fixed navbar height
-                        behavior: "smooth"
-                    });
-                }
-            });
-        });
-    </script>
 
-    <script>
-        // Number counter animation when in viewport
-        const counters = document.querySelectorAll('.counter');
-
-        const animateCounter = (el) => {
-            const target = +el.getAttribute('data-target');
-            const duration = 1500;
-            const start = performance.now();
-
-            const step = (timestamp) => {
-                const progress = Math.min((timestamp - start) / duration, 1);
-                const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
-                const value = Math.floor(eased * target);
-                el.textContent = value.toLocaleString(); // adds commas
-                if (progress < 1) requestAnimationFrame(step);
-                else el.textContent = target.toLocaleString();
-            };
-
-            requestAnimationFrame(step);
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounter(entry.target);
-                    observer.unobserve(entry.target); // only once
-                }
-            });
-        }, { threshold: 0.6 });
-
-        counters.forEach(counter => observer.observe(counter));
-    </script>
-
-    <script>
-        // Utility: open/close modal
-        const enquireModal = document.getElementById('enquireModal');
-        const enquireClose = document.getElementById('enquireClose');
-        const enquireBackdrop = document.getElementById('enquireBackdrop');
-        const enquireStickyBtn = document.getElementById('enquireStickyBtn');
-        const enquireMobileBtn = document.getElementById('enquireMobileBtn');
-        const bookNowBtn = document.getElementById('bookNowBtn');
-
-        function openEnquire() {
-            enquireModal.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden'); // lock scroll
-        }
-        function closeEnquire() {
-            enquireModal.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden');
-        }
-
-        // Open from sticky and mobile buttons
-        if (enquireStickyBtn) enquireStickyBtn.addEventListener('click', (e) => { e.preventDefault(); openEnquire(); });
-        if (enquireMobileBtn) enquireMobileBtn.addEventListener('click', (e) => { e.preventDefault(); openEnquire(); });
-        if (bookNowBtn) bookNowBtn.addEventListener('click', (e) => { e.preventDefault(); openEnquire(); });
-
-        // Close modal: icon, backdrop click, Esc key
-        if (enquireClose) enquireClose.addEventListener('click', closeEnquire);
-        if (enquireBackdrop) enquireBackdrop.addEventListener('click', closeEnquire);
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeEnquire(); });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => {
-                openEnquire();
-            }, 5000);
-        });
-    </script>
+    <script src="js/script.js"></script>
 
 </body>
 
